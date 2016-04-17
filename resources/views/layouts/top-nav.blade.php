@@ -34,7 +34,7 @@
         <nav class="navbar navbar-static-top">
           <div class="container">
             <div class="navbar-header">
-              <a href="doberman.herokuapp.com/" class="navbar-brand"><b>Sitios</b> Modernos</a>
+              <a href="https://doberman.herokuapp.com//" class="navbar-brand"><b>Sitios</b> Modernos</a>
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
                 <i class="fa fa-bars"></i>
               </button>

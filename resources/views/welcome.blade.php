@@ -99,22 +99,22 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
             <h1>Portafolio web</h1>
             <br>
             <div class="col-lg-3">
-                <a href="doberman.herokuapp.com/scrap"><img src="{{ asset('/img/intro01.png') }}" alt=""></a>
-                <a href="doberman.herokuapp.com/scrap"><h3>Scraping web</h3></a>
+                <a href="https://doberman.herokuapp.com//scrap"><img src="{{ asset('/img/intro01.png') }}" alt=""></a>
+                <a href="https://doberman.herokuapp.com//scrap"><h3>Scraping web</h3></a>
                 <p>Raspado <a href="https://github.com/acacha/adminlte-laravel">de múltiples</a> sitios<a href="https://github.com/acacha/adminlte-laravel/issues"> para crear </a> uno <a href="https://github.com/acacha/adminlte-laravel/pulls"> nuevo</a></p>
             </div>
             <div class="col-lg-3">
-                <a href="doberman.herokuapp.com/cotiza"><img src="{{ asset('/img/intro02.png') }}" alt=""></a>
-                <a href="doberman.herokuapp.com/cotiza"><h3>Cotizador de autos</h3></a>
+                <a href="https://doberman.herokuapp.com//cotiza"><img src="{{ asset('/img/intro02.png') }}" alt=""></a>
+                <a href="https://doberman.herokuapp.com//cotiza"><h3>Cotizador de autos</h3></a>
                 <p>Cotiza tu seguro de auto en segundos</p>
             </div>
             <div class="col-lg-3">
-                <a href="doberman.herokuapp.com/voice"><img src="{{ asset('/img/intro03.png') }}" alt=""></a>
-                <a href="doberman.herokuapp.com/voice"><h3>Aplicación locutor</h3></a>
+                <a href="https://doberman.herokuapp.com//voice"><img src="{{ asset('/img/intro03.png') }}" alt=""></a>
+                <a href="https://doberman.herokuapp.com//voice"><h3>Aplicación locutor</h3></a>
                 <p>Consumo de la API voiceBunny</p>
             </div>
             <div class="col-lg-3">
-                <a href="doberman.herokuapp.com/gmaps"><img src="{{ asset('/img/intro03.png') }}" alt=""></a>
+                <a href="https://doberman.herokuapp.com//gmaps"><img src="{{ asset('/img/intro03.png') }}" alt=""></a>
                 <h3>Maps</h3>
                 <p>Lorem Ipsum is simply dummy text of.</p>
             </div>
@@ -122,18 +122,18 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
         <div class="row centered">
             <br>
             <div class="col-lg-3">
-                <a href="doberman.herokuapp.com/crud"><img src="{{ asset('/img/intro01.png') }}" alt=""></a>
-                <a href="doberman.herokuapp.com/crud"><h3>CRUD</h3></a>
+                <a href="https://doberman.herokuapp.com//crud"><img src="{{ asset('/img/intro01.png') }}" alt=""></a>
+                <a href="https://doberman.herokuapp.com//crud"><h3>CRUD</h3></a>
                 <p>Crear, leer, actualizar y borrar</p>
             </div>
             <div class="col-lg-3">
-                <a href="doberman.herokuapp.com/banner"><img src="{{ asset('/img/intro02.png') }}" alt=""></a>
-                <a href="doberman.herokuapp.com/banner"><h3>Banners con GSAP JS</h3></a>
+                <a href="https://doberman.herokuapp.com//banner"><img src="{{ asset('/img/intro02.png') }}" alt=""></a>
+                <a href="https://doberman.herokuapp.com//banner"><h3>Banners con GSAP JS</h3></a>
                 <p>HTML5 animation</p>
             </div>
             <div class="col-lg-3">
-                <a href="doberman.herokuapp.com/webservice"><img src="{{ asset('/img/intro03.png') }}" alt=""></a>
-                <a href="doberman.herokuapp.com/webservice"><h3>Web services</h3></a>
+                <a href="https://doberman.herokuapp.com//webservice"><img src="{{ asset('/img/intro03.png') }}" alt=""></a>
+                <a href="https://doberman.herokuapp.com//webservice"><h3>Web services</h3></a>
                 <p>Consumo de servicio web de tipo SOAP y REST</p>
             </div>
             <div class="col-lg-3">
@@ -150,17 +150,17 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
                 <p></p>
             </div>
             <div class="col-lg-3">
-                <a href="doberman.herokuapp.com/aplication"><img src="{{ asset('/img/intro02.png') }}" alt=""></a>
-                <a href="doberman.herokuapp.com/aplication"><h3>Aplication</h3>
+                <a href="https://doberman.herokuapp.com//aplication"><img src="{{ asset('/img/intro02.png') }}" alt=""></a>
+                <a href="https://doberman.herokuapp.com//aplication"><h3>Aplication</h3>
                 <p>Aplication</p></a>
             </div>
             <div class="col-lg-3">
-                <a href="doberman.herokuapp.com/stripe"><img src="{{ asset('/img/intro03.png') }}" alt=""></a>
-                <a href="doberman.herokuapp.com/stripe"><h3>Ecommerce</h3></a>
+                <a href="https://doberman.herokuapp.com//stripe"><img src="{{ asset('/img/intro03.png') }}" alt=""></a>
+                <a href="https://doberman.herokuapp.com//stripe"><h3>Ecommerce</h3></a>
                 <p>Stripe</p>
             </div>
             <div class="col-lg-3">
-                <a href="doberman.herokuapp.com/about"><img src="{{ asset('/img/user2-160x160.jpg') }}" alt=""></a>
+                <a href="https://doberman.herokuapp.com//about"><img src="{{ asset('/img/user2-160x160.jpg') }}" alt=""></a>
                 <h3>Acerca de </h3>
                 <p></p>
             </div>
