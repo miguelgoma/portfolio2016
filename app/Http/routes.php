@@ -21,3 +21,16 @@ Route::get('/', function () {
 Route::get('/cow', function () {
     echo '<pre>'.Cow::say("Ohmg I'm a cow!").'</pre>';
 });
+
+Route::get('/test', function()
+{
+    $beautymail = app()->make(Snowfire\Beautymail\Beautymail::class);
+    $beautymail->send('emails.welcome', [], function($message)
+    {
+        $message
+            ->from('bar@example.com')
+            ->to('utnmike@gmail.com', 'mike goinzalez')
+            ->subject('Welcome!');
+    });
+
+});
