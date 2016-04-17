@@ -1,5 +1,7 @@
 <?php
 
+use Cowsayphp\Cow;
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -13,4 +15,9 @@
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+
+Route::get('/cow', function () {
+    echo '<pre>'.Cow::say("Ohmg I'm a cow!").'</pre>';
 });
