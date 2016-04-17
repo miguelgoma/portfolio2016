@@ -26,8 +26,8 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
     
-    <script src="http://doberman.herokuapp.com/plugins/jQuery/jQuery-2.1.4.min.js"></script>
-    <script src="http://doberman.herokuapp.com/../js/smoothscroll.js"></script>
+    <script src="https://doberman.herokuapp.com/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <script src="https://doberman.herokuapp.com/../js/smoothscroll.js"></script>
 
 </head>
 
@@ -336,7 +336,7 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <!--<script src="{{ asset('../js/bootstrap.min.js') }}" type="text/javascript"></script>-->
-<script src="http://doberman.herokuapp.com/../js/bootstrap.min.js"></script>
+<script src="https://doberman.herokuapp.com/../js/bootstrap.min.js"></script>
 <script>
     $('.carousel').carousel({
         interval: 3500
