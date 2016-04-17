@@ -27,7 +27,7 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
     
     <script src="http://doberman.herokuapp.com/plugins/jQuery/jQuery-2.1.4.min.js"></script>
-    <script src="http://doberman.herokuapp.com/js/smoothscroll.js"></script>
+    <script src="http://doberman.herokuapp.com/../js/smoothscroll.js"></script>
 
 </head>
 
