@@ -12,14 +12,17 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     <title>Sitios Modernos</title>
 
     <!-- Bootstrap core CSS -->
-    <!--<link href="{{ asset('../css/bootstrap.css') }}" rel="stylesheet">-->
-    <link href="https://doberman.herokuapp.com/../css/bootstrap.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
+    <!--<link href="{{ asset('../css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('../css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('../css/bootstrap.css.map') }}" rel="stylesheet">
     <link href="{{ asset('../css/AdminLTE.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('../css/skins/skin-blue.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('../css/skins/skin-blue.min.css') }}" rel="stylesheet">-->
 
+    <link href="https://doberman.herokuapp.com/../css/bootstrap.css" rel="stylesheet">
+    <link href="https://doberman.herokuapp.com/../css/main.css" rel="stylesheet">
+    <link href="https://doberman.herokuapp.com/../css/bootstrap.css.map" rel="stylesheet">
+    <link href="https://doberman.herokuapp.com/../css/AdminLTE.min.css" rel="stylesheet">
+    <link href="https://doberman.herokuapp.com/../css/skins/skin-blue.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
 
