@@ -89,22 +89,22 @@
             <h1>Portafolio web</h1>
             <br>
             <div class="col-lg-3">
-                <a href="https://doberman.herokuapp.com/scrap"><img src="{{ asset('/img/intro01.png') }}" alt=""></a>
+                <a href="https://doberman.herokuapp.com/scrap"><img src="{{ asset('/img/png/tools.png') }}" alt=""></a>
                 <a href="https://doberman.herokuapp.com/scrap"><h3>Scraping web</h3></a>
                 <p>Raspado <a href="https://github.com/acacha/adminlte-laravel">de múltiples</a> sitios<a href="https://github.com/acacha/adminlte-laravel/issues"> para crear </a> uno <a href="https://github.com/acacha/adminlte-laravel/pulls"> nuevo</a></p>
             </div>
             <div class="col-lg-3">
-                <a href="https://doberman.herokuapp.com/cotiza"><img src="{{ asset('/img/intro02.png') }}" alt=""></a>
+                <a href="https://doberman.herokuapp.com/cotiza"><img src="{{ asset('/img/png/calc.png') }}" alt=""></a>
                 <a href="https://doberman.herokuapp.com/cotiza"><h3>Cotizador de autos</h3></a>
                 <p>Cotiza tu seguro de auto en segundos</p>
             </div>
             <div class="col-lg-3">
-                <a href="https://doberman.herokuapp.com/voice"><img src="{{ asset('/img/intro03.png') }}" alt=""></a>
+                <a href="https://doberman.herokuapp.com/voice"><img src="{{ asset('/img/png/chat.png') }}" alt=""></a>
                 <a href="https://doberman.herokuapp.com/voice"><h3>Aplicación locutor</h3></a>
                 <p>Consumo de la API voiceBunny</p>
             </div>
             <div class="col-lg-3">
-                <a href="https://doberman.herokuapp.com/gmaps"><img src="{{ asset('/img/intro03.png') }}" alt=""></a>
+                <a href="https://doberman.herokuapp.com/gmaps"><img src="{{ asset('/img/png/maps.png') }}" alt=""></a>
                 <h3>Maps</h3>
                 <p>Lorem Ipsum is simply dummy text of.</p>
             </div>
@@ -112,22 +112,22 @@
         <div class="row centered">
             <br>
             <div class="col-lg-3">
-                <a href="https://doberman.herokuapp.com/crud"><img src="{{ asset('/img/intro01.png') }}" alt=""></a>
+                <a href="https://doberman.herokuapp.com/crud"><img src="{{ asset('/img/png/libreta.png') }}" alt=""></a>
                 <a href="https://doberman.herokuapp.com/crud"><h3>CRUD</h3></a>
                 <p>Crear, leer, actualizar y borrar</p>
             </div>
             <div class="col-lg-3">
-                <a href="https://doberman.herokuapp.com/banner"><img src="{{ asset('/img/intro02.png') }}" alt=""></a>
+                <a href="https://doberman.herokuapp.com/banner"><img src="{{ asset('/img/png/cities_0013_cuadro.png') }}" alt=""></a>
                 <a href="https://doberman.herokuapp.com/banner"><h3>Banners con GSAP JS</h3></a>
                 <p>HTML5 animation</p>
             </div>
             <div class="col-lg-3">
-                <a href="https://doberman.herokuapp.com/webservice"><img src="{{ asset('/img/intro03.png') }}" alt=""></a>
+                <a href="https://doberman.herokuapp.com/webservice"><img src="{{ asset('/img/png/ovalo.png') }}" alt=""></a>
                 <a href="https://doberman.herokuapp.com/webservice"><h3>Web services</h3></a>
                 <p>Consumo de servicio web de tipo SOAP y REST</p>
             </div>
             <div class="col-lg-3">
-                <img src="{{ asset('/img/user2-160x160.jpg') }}" alt="">
+                <img src="{{ asset('/img/png/pie.png') }}" alt="">
                 <h3>Manipulación de datos</h3>
                 <p>Google Charts</p>
             </div>
@@ -135,22 +135,22 @@
         <div class="row centered">
             <br>
             <div class="col-lg-3">
-                <img src="{{ asset('/img/intro01.png') }}" alt="">
+                <img src="{{ asset('/img/png/cities_0005_carta.png') }}" alt="">
                 <h3>Newsletters</h3>
                 <p></p>
             </div>
             <div class="col-lg-3">
-                <a href="https://doberman.herokuapp.com/aplication"><img src="{{ asset('/img/intro02.png') }}" alt=""></a>
+                <a href="https://doberman.herokuapp.com/aplication"><img src="{{ asset('/img/png/engrane.png') }}" alt=""></a>
                 <a href="https://doberman.herokuapp.com/aplication"><h3>Aplication</h3>
                 <p>Aplication</p></a>
             </div>
             <div class="col-lg-3">
-                <a href="https://doberman.herokuapp.com/stripe"><img src="{{ asset('/img/intro03.png') }}" alt=""></a>
+                <a href="https://doberman.herokuapp.com/stripe"><img src="{{ asset('/img/png/garanty.png') }}" alt=""></a>
                 <a href="https://doberman.herokuapp.com/stripe"><h3>Ecommerce</h3></a>
                 <p>Stripe</p>
             </div>
             <div class="col-lg-3">
-                <a href="https://doberman.herokuapp.com/about"><img src="{{ asset('/img/user2-160x160.jpg') }}" alt=""></a>
+                <a href="https://doberman.herokuapp.com/about"><img src="{{ asset('/img/png/telefono.png') }}" alt=""></a>
                 <h3>Acerca de </h3>
                 <p></p>
             </div>
@@ -385,7 +385,7 @@
 <div id="c">
     <div class="container">
         <p>
-            <a href="https://github.com/acacha/adminlte-laravel"></a><b>admin-lte-laravel</b></a>. A Laravel 5 package that switchs default Laravel scaffolding/boilerplate to AdminLTE template.<br/>
+            <a href="https://doberman.herokuapp.com"></a><b>doberman.herokuapp</b></a> Todos los derechos reservados.<br/>
             <strong>Copyright &copy; 2016 <a href="https://twitter.com/miguelgoma">@miguelgoma</a></strong>
         </p>
     </div>
