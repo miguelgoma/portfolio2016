@@ -350,7 +350,7 @@
                         </a>
                     </div>
                     <div class="media-body">
-                        <p class="media-heading">Lorem Ipsum is simply dummy text of the printing and type setting industry dummy.
+                        <p class="media-heading">nbbbbbbbbbbbbb.
                         </p>
                         <p class="pull-right"><i>Emilly Barbosa Cunha</i></p>
                     </div>
@@ -362,7 +362,7 @@
                         </a>
                     </div>
                     <div class="media-body">
-                        <p class="media-heading">Lorem Ipsum is simply dummy text of the printing and type setting industry dummy.
+                        <p class="media-heading">aaaaaaaaaaaaaaaaaaaaaaaaaaa.
                         </p>
                         <p class="pull-right"><i>Sinikka Oramo</i></p>
                     </div>
