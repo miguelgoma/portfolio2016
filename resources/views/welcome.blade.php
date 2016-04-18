@@ -374,7 +374,7 @@
                         </a>
                     </div>
                     <div class="media-body">
-                        <p class="media-heading">Lorem Ipsum is simply dummy text of the printing and type setting industry dummy.
+                        <p class="media-heading">cccccccccccccc.
                         </p>
                         <p class="pull-right"><i>Samsa Parras</i></p>
                     </div>
@@ -386,6 +386,7 @@
     <div class="container">
         <p>
             <a href="https://doberman.herokuapp.com"></a><b>doberman.herokuapp</b></a> Todos los derechos reservados.<br/>
+            <strong>Copyright &copy; 2016 <a href="https://twitter.com/miguelgoma">@miguelgoma</a></strong>
             <strong>Copyright &copy; 2016 <a href="https://twitter.com/miguelgoma">@miguelgoma</a></strong>
         </p>
     </div>
