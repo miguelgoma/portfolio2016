@@ -18,6 +18,41 @@
     
     <script src="https://doberman.herokuapp.com/plugins/jQuery/jQuery-2.1.4.min.js"></script>
     <script src="https://doberman.herokuapp.com/../js/smoothscroll.js"></script>
+
+    <script type="text/javascript" src="../js/plugins/CSSPlugin.js"></script>
+        <script type="text/javascript" src="../js/easing/EasePack.js"></script>
+        <script type="text/javascript" src="../js/TimelineLite.js"></script>
+        <script type="text/javascript" src="../js/TweenLite.js"></script>
+        <!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>-->
+
+    <style type="text/css">
+            html, body { overflow:hidden; }
+            body {
+                background:url(img/carnation_background_pattern_1.gif);
+                margin:0px;
+                padding:0px;
+                color:#CCCCCC;
+                font-family:Verdana, Geneva, sans-serif;
+            }
+            .playground {
+                position:absolute;
+                height:400px;
+                width:500px;
+                margin:-200px 0 0 -250px;
+                border-bottom: solid 3px #222;
+                top:50%;left:50%;
+            }
+            #ball {
+                display:block;
+                position:absolute;
+                width:50px;
+                height:50px;
+                background:#480e6e;
+                -moz-border-radius: 50%;
+                -webkit-border-radius: 50%;
+                border-radius: 50%; 
+            }
+        </style>
 </head>
 
 <body data-spy="scroll" data-offset="1" data-target="#navigation">
@@ -69,7 +104,10 @@
                 <img class="hidden-xs hidden-sm hidden-md" src="{{ asset('/img/arrow1.png') }}">
             </div>
             <div class="col-lg-8">
-                <img class="img-responsive" src="{{ asset('/img/app-bg.png') }}" alt="">
+                <!--<img class="img-responsive" src="{{ asset('/img/app-bg.png') }}" alt="">-->
+                <div class="playground">
+                    <span id="ball"></span>
+                </div>
             </div>
             <div class="col-lg-2">
                 <br>
@@ -397,11 +435,28 @@
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
 <!--<script src="{{ asset('../js/bootstrap.min.js') }}" type="text/javascript"></script>-->
-<script src="https://doberman.herokuapp.com/../js/bootstrap.min.js"></script>
-<script>
-    $('.carousel').carousel({
-        interval: 3500
-    })
-</script>
+    <script src="https://doberman.herokuapp.com/../js/bootstrap.min.js"></script>
+    <script>
+        $('.carousel').carousel({
+            interval: 3500
+        })
+    </script>
+    <script language="javascript" type="text/javascript">
+            (function() {
+                var ball = document.getElementById('ball'),
+                    colors = ["#480e6e","#fc4239","#ffd400","#00c4df"];
+                function play() {
+                    ball.style.marginLeft = "0px";
+                    ball.style.marginTop = "350px";
+                    var tl = new TimelineLite({delay:0.5});
+                    tl.to(ball, 0.5, {css:{marginTop:0}})
+                      .to(ball, 1.25, {css:{marginTop:350}, ease:Bounce.easeOut})
+                      .to(ball, 3.5, {css:{marginLeft:"+=450px"}}, -1.75)
+                      .to(ball, 1, {css:{marginLeft:0, backgroundColor:colors[ Math.floor(Math.random() * colors.length) ]}}, 1)
+                      .call(play);
+                }
+                play();
+            })();
+    </script>
 </body>
 </html>
