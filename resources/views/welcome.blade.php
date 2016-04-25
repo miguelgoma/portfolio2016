@@ -16,7 +16,7 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
     
-    <script src="https://doberman.herokuapp.com/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js" integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ=" crossorigin="anonymous"></script>
     <script src="https://doberman.herokuapp.com/../js/smoothscroll.js"></script>
 
     <script type="text/javascript" src="../js/plugins/CSSPlugin.js"></script>
@@ -104,7 +104,7 @@
                 <img class="hidden-xs hidden-sm hidden-md" src="{{ asset('/img/arrow1.png') }}">
             </div>
             <div class="col-lg-8">
-                <!--<img class="img-responsive" src="{{ asset('/img/app-bg.png') }}" alt="">-->
+                <img class="img-responsive" src="{{ asset('/img/app-bg.png') }}" alt="">
                 <div class="playground">
                     <span id="ball"></span>
                 </div>
@@ -424,7 +424,6 @@
     <div class="container">
         <p>
             <a href="https://doberman.herokuapp.com"></a><b>doberman.herokuapp</b></a> Todos los derechos reservados.<br/>
-            <strong>Copyright &copy; 2016 <a href="https://twitter.com/miguelgoma">@miguelgoma</a></strong>
             <strong>Copyright &copy; 2016 <a href="https://twitter.com/miguelgoma">@miguelgoma</a></strong>
         </p>
     </div>
