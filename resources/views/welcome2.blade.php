@@ -11,7 +11,7 @@
     <!-- Retina.js - Load first for faster HQ mobile images. -->
     <script src="assets/js/plugins/retina/retina.min.js"></script>
     <!-- Font Awesome -->
-    <link href="../css/principal/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <!-- Default Fonts -->
     <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900" rel="stylesheet" type="text/css">
@@ -48,6 +48,50 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+
+    <!-- Landing Page Demo Styles -->
+    <style>
+    .demo-header {
+        text-align: center;
+        background: url('/img/two_bg-header.jpg') no-repeat center center scroll;
+        color: #fff;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        padding: 100px 0;
+    }
+    .preview-pane {
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 15px;
+    }
+    .preview-pane hr {
+        max-width: 50px;
+        margin: 5px auto;
+    }
+    .preview-pane a {
+        color: #222;
+    }
+    .preview-pane a:focus {
+        outline: none;
+    }
+    .preview-pane a img {
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    .preview-pane a:hover img {
+        opacity: 0.5;
+    }
+    .label-primary {
+        background-color: #EF4035;
+    }
+    .cta-list {
+        margin-top: 30px;
+    }
+    </style>
+
 </head>
 <body id="page-top">
     <!-- Navigation -->
@@ -104,81 +148,18 @@
             <div class="brand-name-subtext">by Start Bootstrap</div>
         </div>
         <div class="scroll-down">
-            <a class="btn page-scroll" href="#about"><i class="fa fa-angle-down fa-fw"></i></a>
+            <a class="btn page-scroll" href="#portfolio"><i class="fa fa-angle-down fa-fw"></i></a>
         </div>
     </header>
+
+
     <section id="portfolio">
         <div class="preview-pane">
             <h1>Portafolio web</h1>
         </div>
 
         <div class="container" id="previews">
-            <div class="row content-row">
-                <div class="col-md-4">
-                    <div class="preview-pane">
-                        <a href="agency.html">
-                            <img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt="">
-                            <h3>Animations <span class="label label-primary">Nuevo!</span></h3>
-                            <hr class="colored">
-                            <p class="text-muted">Ideal For:</p>
-                            <ul class="list-unstyled text-muted">
-                                <li>
-                                    <em>Agencies</em>
-                                </li>
-                                <li>
-                                    <em>Businesses</em>
-                                </li>
-                                <li>
-                                    <em>Consultants</em>
-                                </li>
-                            </ul>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="preview-pane">
-                        <a href="creative.html">
-                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-creative.png')}}" alt="">
-                            <h3>API Twitter <span class="label label-primary">Nuevo!</span></h3>
-                            <hr class="colored">
-                            <p class="text-muted">Ideal For:</p>
-                            <ul class="list-unstyled text-muted">
-                                <li>
-                                    <em>Personal Portfolios</em>
-                                </li>
-                                <li>
-                                    <em>Freelancers</em>
-                                </li>
-                                <li>
-                                    <em>Photographers</em>
-                                </li>
-                            </ul>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="preview-pane">
-                        <a href="culinary.html">
-                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt="">
-                            <h3>VOICE BUNNY <span class="label label-primary">Nuevo!</span></h3>
-                            <hr class="colored">
-                            <p class="text-muted">Ideal For:</p>
-                            <ul class="list-unstyled text-muted">
-                                <li>
-                                    <em>Restaurants</em>
-                                </li>
-                                <li>
-                                    <em>Bakeries</em>
-                                </li>
-                                <li>
-                                    <em>Caterers</em>
-                                </li>
-                            </ul>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
+            <div class="row wow fadeIn" >
                 <div class="col-md-4">
                     <div class="preview-pane">
                         <a href="fashion.html">
@@ -234,6 +215,7 @@
                     </div>
                 </div>
             </div>
+            <div class="row content-row wow fadeIn">
             <div class="col-md-4">
                     <div class="preview-pane">
                         <a href="agency.html">
@@ -298,7 +280,96 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row content-row wow fadeIn">
+                <div class="col-md-3">
+                    <div class="preview-pane">
+                        <a href="agency.html">
+                            <img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt="">
+                            <h3>Animations </h3>
+                            <hr class="colored">
+                            <p class="text-muted">Ideal For:</p>
+                            <ul class="list-unstyled text-muted">
+                                <li>
+                                    <em>Agencies</em>
+                                </li>
+                                <li>
+                                    <em>Businesses</em>
+                                </li>
+                                <li>
+                                    <em>Consultants</em>
+                                </li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="preview-pane">
+                        <a href="creative.html">
+                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-creative.png')}}" alt="">
+                            <h3>API Twitter </h3>
+                            <hr class="colored">
+                            <p class="text-muted">Ideal For:</p>
+                            <ul class="list-unstyled text-muted">
+                                <li>
+                                    <em>Personal Portfolios</em>
+                                </li>
+                                <li>
+                                    <em>Freelancers</em>
+                                </li>
+                                <li>
+                                    <em>Photographers</em>
+                                </li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="preview-pane">
+                        <a href="culinary.html">
+                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt="">
+                            <h3>VOICE BUNNY </h3>
+                            <hr class="colored">
+                            <p class="text-muted">Ideal For:</p>
+                            <ul class="list-unstyled text-muted">
+                                <li>
+                                    <em>Restaurants</em>
+                                </li>
+                                <li>
+                                    <em>Bakeries</em>
+                                </li>
+                                <li>
+                                    <em>Caterers</em>
+                                </li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="preview-pane">
+                        <a href="culinary.html">
+                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt="">
+                            <h3>VOICE BUNNY </h3>
+                            <hr class="colored">
+                            <p class="text-muted">Ideal For:</p>
+                            <ul class="list-unstyled text-muted">
+                                <li>
+                                    <em>Restaurants</em>
+                                </li>
+                                <li>
+                                    <em>Bakeries</em>
+                                </li>
+                                <li>
+                                    <em>Caterers</em>
+                                </li>
+                            </ul>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            </div>            
         </div>
+        <hr class="colored">
     </section>
     <section id="about">
         <div class="container-fluid">
@@ -538,317 +609,6 @@
             <p>Examples of our work which represent our design and marketing capabilities.</p>
         </div>
     </section>
-    <section class="portfolio-carousel wow fadeIn owl-carousel owl-theme" style="opacity: 1; display: block; visibility: hidden; animation-name: none;">
-        <div class="owl-wrapper-outer autoHeight" style="height: 932px;"><div class="owl-wrapper" style="width: 14720px; left: 0px; display: block;"><div class="owl-item" style="width: 1840px;"><div class="item" style="background-image: url('/img/portfolio/bg-1.jpg')">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-4 col-md-push-8">
-                        <div class="project-details">
-                            <img src="/img/client-logos/logo-1.png" class="img-responsive client-logo" alt="">
-                            <span class="project-name">Project Name</span>
-                            <span class="project-description">Branding, Website Design</span>
-                            <hr class="colored">
-                            <a href="#portfolioModal1" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-8 col-md-pull-4 hidden-xs">
-                        <img src="/img/portfolio/mobile-screens.png" class="img-responsive portfolio-image" alt="">
-                    </div>
-                </div>
-            </div>
-        </div></div><div class="owl-item" style="width: 1840px;"><div class="item" style="background-image: url('/img/portfolio/bg-2.jpg')">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-4 col-md-push-8">
-                        <div class="project-details">
-                            <img src="/img/client-logos/logo-2.png" class="img-responsive client-logo" alt="">
-                            <span class="project-name">Project Name</span>
-                            <span class="project-description">Branding, Website Design</span>
-                            <hr class="colored">
-                            <a href="#portfolioModal2" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-8 col-md-pull-4 hidden-xs">
-                        <img src="/img/portfolio/tablet-screens.png" class="img-responsive portfolio-image" alt="">
-                    </div>
-                </div>
-            </div>
-        </div></div><div class="owl-item" style="width: 1840px;"><div class="item" style="background-image: url('/img/portfolio/bg-3.jpg')">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-4 col-md-push-8">
-                        <div class="project-details">
-                            <img src="/img/client-logos/logo-1.png" class="img-responsive client-logo" alt="">
-                            <span class="project-name">Project Name</span>
-                            <span class="project-description">Branding, Website Design</span>
-                            <hr class="colored">
-                            <a href="#portfolioModal3" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-8 col-md-pull-4 hidden-xs">
-                        <img src="/img/portfolio/mobile-screens.png" class="img-responsive portfolio-image" alt="">
-                    </div>
-                </div>
-            </div>
-        </div></div><div class="owl-item" style="width: 1840px;"><div class="item" style="background-image: url('/img/portfolio/bg-4.jpg')">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-4 col-md-push-8">
-                        <div class="project-details">
-                            <img src="/img/client-logos/logo-2.png" class="img-responsive client-logo" alt="">
-                            <span class="project-name">Project Name</span>
-                            <span class="project-description">Branding, Website Design</span>
-                            <hr class="colored">
-                            <a href="#portfolioModal4" data-toggle="modal" class="btn btn-outline-light">View Details <i class="fa fa-long-arrow-right fa-fw"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-8 col-md-pull-4 hidden-xs">
-                        <img src="/img/portfolio/tablet-screens.png" class="img-responsive portfolio-image" alt="">
-                    </div>
-                </div>
-            </div>
-        </div></div></div></div>
-        
-        
-        
-    <div class="owl-controls clickable"><div class="owl-buttons"><div class="owl-prev"><i class="fa fa-angle-left"></i></div><div class="owl-next"><i class="fa fa-angle-right"></i></div></div></div></section>
-    <section>
-        <div class="container text-center wow fadeIn" style="visibility: hidden; animation-name: none;">
-            <h2>Portfolio</h2>
-            <hr class="colored">
-            <p>Here are some other projects that we've worked on.</p>
-            <div class="row content-row">
-                <div class="col-lg-12">
-                    <div class="portfolio-filter">
-                        <ul id="filters" class="clearfix">
-                            <li>
-                                <span class="filter active" data-filter="identity graphic logo web">All</span>
-                            </li>
-                            <li>
-                                <span class="filter" data-filter="identity">Identity</span>
-                            </li>
-                            <li>
-                                <span class="filter" data-filter="graphic">Graphic</span>
-                            </li>
-                            <li>
-                                <span class="filter" data-filter="web">Web</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div id="portfoliolist">
-                        <div class="portfolio identity mix_all" data-cat="identity" href="#portfolioModal1" data-toggle="modal" style="display: inline-block;  opacity: 1;">
-                            <div class="portfolio-wrapper">
-                                <img src="/img/portfolio/grid/identity/1.jpg" alt="">
-                                <div class="caption">
-                                    <div class="caption-text">
-                                        <a class="text-title">Generic Inc.</a>
-                                        <span class="text-category">Brand Identity</span>
-                                    </div>
-                                    <div class="caption-bg"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio web mix_all" data-cat="web" href="#portfolioModal2" data-toggle="modal" style="display: inline-block;  opacity: 1;">
-                            <div class="portfolio-wrapper">
-                                <img src="/img/portfolio/grid/web/1.jpg" alt="">
-                                <div class="caption">
-                                    <div class="caption-text">
-                                        <a class="text-title">Brands</a>
-                                        <span class="text-category">Web Development</span>
-                                    </div>
-                                    <div class="caption-bg"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio graphic mix_all" data-cat="graphic" href="#portfolioModal3" data-toggle="modal" style="display: inline-block;  opacity: 1;">
-                            <div class="portfolio-wrapper">
-                                <img src="/img/portfolio/grid/graphic/1.jpg" alt="">
-                                <div class="caption">
-                                    <div class="caption-text">
-                                        <a class="text-title">Excellence</a>
-                                        <span class="text-category">Poster Design</span>
-                                    </div>
-                                    <div class="caption-bg"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio web mix_all" data-cat="web" href="#portfolioModal4" data-toggle="modal" style="display: inline-block;  opacity: 1;">
-                            <div class="portfolio-wrapper">
-                                <img src="/img/portfolio/grid/web/2.jpg" alt="">
-                                <div class="caption">
-                                    <div class="caption-text">
-                                        <a class="text-title">YouTV</a>
-                                        <span class="text-category">Web Development</span>
-                                    </div>
-                                    <div class="caption-bg"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio graphic mix_all" data-cat="graphic" href="#portfolioModal1" data-toggle="modal" style="display: inline-block;  opacity: 1;">
-                            <div class="portfolio-wrapper">
-                                <img src="/img/portfolio/grid/graphic/2.jpg" alt="">
-                                <div class="caption">
-                                    <div class="caption-text">
-                                        <a class="text-title">Office Supplies</a>
-                                        <span class="text-category">Graphic Design</span>
-                                    </div>
-                                    <div class="caption-bg"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio web mix_all" data-cat="web" href="#portfolioModal2" data-toggle="modal" style="display: inline-block;  opacity: 1;">
-                            <div class="portfolio-wrapper">
-                                <img src="/img/portfolio/grid/web/3.jpg" alt="">
-                                <div class="caption">
-                                    <div class="caption-text">
-                                        <a class="text-title">Fooder</a>
-                                        <span class="text-category">Mobile App</span>
-                                    </div>
-                                    <div class="caption-bg"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio graphic mix_all" data-cat="graphic" href="#portfolioModal3" data-toggle="modal" style="display: inline-block;  opacity: 1;">
-                            <div class="portfolio-wrapper">
-                                <img src="/img/portfolio/grid/graphic/3.jpg" alt="">
-                                <div class="caption">
-                                    <div class="caption-text">
-                                        <a class="text-title">Mountain Tea</a>
-                                        <span class="text-category">Graphic Design</span>
-                                    </div>
-                                    <div class="caption-bg"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio graphic mix_all" data-cat="graphic" href="#portfolioModal4" data-toggle="modal" style="display: inline-block;  opacity: 1;">
-                            <div class="portfolio-wrapper">
-                                <img src="/img/portfolio/grid/graphic/4.jpg" alt="">
-                                <div class="caption">
-                                    <div class="caption-text">
-                                        <a class="text-title">Checkmark</a>
-                                        <span class="text-category">Graphic Design</span>
-                                    </div>
-                                    <div class="caption-bg"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio identity mix_all" data-cat="identity" href="#portfolioModal1" data-toggle="modal" style="display: inline-block;  opacity: 1;">
-                            <div class="portfolio-wrapper">
-                                <img src="/img/portfolio/grid/identity/2.jpg" alt="">
-                                <div class="caption">
-                                    <div class="caption-text">
-                                        <a class="text-title">Demish</a>
-                                        <span class="text-category">Brand Identity</span>
-                                    </div>
-                                    <div class="caption-bg"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio web mix_all" data-cat="web" href="#portfolioModal2" data-toggle="modal" style="display: inline-block;  opacity: 1;">
-                            <div class="portfolio-wrapper">
-                                <img src="/img/portfolio/grid/web/4.jpg" alt="">
-                                <div class="caption">
-                                    <div class="caption-text">
-                                        <a class="text-title">OneRepublic</a>
-                                        <span class="text-category">Web Development</span>
-                                    </div>
-                                    <div class="caption-bg"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio graphic mix_all" data-cat="graphic" href="#portfolioModal3" data-toggle="modal" style="display: inline-block;  opacity: 1;">
-                            <div class="portfolio-wrapper">
-                                <img src="/img/portfolio/grid/graphic/5.jpg" alt="">
-                                <div class="caption">
-                                    <div class="caption-text">
-                                        <a class="text-title">Postable</a>
-                                        <span class="text-category">Graphic Design</span>
-                                    </div>
-                                    <div class="caption-bg"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio identity mix_all" data-cat="identity" href="#portfolioModal4" data-toggle="modal" style="display: inline-block;  opacity: 1;">
-                            <div class="portfolio-wrapper">
-                                <img src="/img/portfolio/grid/identity/3.jpg" alt="">
-                                <div class="caption">
-                                    <div class="caption-text">
-                                        <a class="text-title">Simpli Nota</a>
-                                        <span class="text-category">Brand Identity</span>
-                                    </div>
-                                    <div class="caption-bg"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="testimonials bg-gray">
-        <div class="container wow fadeIn" style="visibility: hidden; animation-name: none;">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <div class="testimonials-carousel owl-carousel owl-theme" style="opacity: 1; display: block;">
-                        <div class="owl-wrapper-outer autoHeight" style="height: 315px;"><div class="owl-wrapper" style="width: 3780px; left: 0px; display: block;"><div class="owl-item" style="width: 945px;"><div class="item">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <p class="lead">"Working with Vitality was both a valuable and rewarding experience."</p>
-                                    <hr class="colored">
-                                    <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero ipsam aut fugit?</p>
-                                    <div class="testimonial-info">
-                                        <div class="testimonial-img">
-                                            <img src="/img/testimonials/1.jpg" class="img-circle img-responsive" alt="">
-                                        </div>
-                                        <div class="testimonial-author">
-                                            <span class="name">Jim Walker</span>
-                                            <p class="small">CEO of GeneriCorp</p>
-                                            <div class="stars">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 945px;"><div class="item">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <p class="lead">"Working with Vitality was both a valuable and rewarding experience."</p>
-                                    <hr class="colored">
-                                    <p class="quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, temporibus, laborum, dignissimos doloremque corporis alias nostrum recusandae culpa id quisquam harum impedit sed sunt non obcaecati vero ipsam aut fugit?</p>
-                                    <div class="testimonial-info">
-                                        <div class="testimonial-img">
-                                            <img src="/img/testimonials/1.jpg" class="img-circle img-responsive" alt="">
-                                        </div>
-                                        <div class="testimonial-author">
-                                            <span class="name">Jim Walker</span>
-                                            <p class="small">CEO of GeneriCorp</p>
-                                            <div class="stars">
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div></div></div></div>
-                        
-                    <div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div><div class="owl-buttons"><div class="owl-prev"><i class="fa fa-angle-left"></i></div><div class="owl-next"><i class="fa fa-angle-right"></i></div></div></div></div>
-                </div>
-            </div>
-        </div>
-    </section>
     <section id="pricing" class="pricing" style="background-image: url('/img/two_bg-pricing.jpg')">
         <div class="container wow fadeIn" style="visibility: hidden; animation-name: none;">
             <div class="row text-center">
@@ -1022,202 +782,12 @@
             </div>
             <div class="row copyright">
                 <div class="col-lg-12">
-                    <p class="small">© 2015 Start Bootstrap Themes</p>
+                    <p class="small">© 2016 @miguelgoma</p>
                 </div>
             </div>
         </div>
     </footer>
-    <!-- Portfolio Modals -->
-    <!-- Example Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('/img/portfolio/bg-1.jpg')">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="modal-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <img src="/img/client-logos/logo-1.png" class="img-responsive img-centered" alt="">
-                            <h2>Project Title</h2>
-                            <hr class="colored">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
-                        </div>
-                        <div class="col-lg-12">
-                            <img src="/img/portfolio/mobile-screens.png" class="img-responsive img-centered" alt="">
-                        </div>
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
-                                </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">April 2015</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Example Modal 2 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('/img/portfolio/bg-2.jpg')">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="modal-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <img src="/img/client-logos/logo-2.png" class="img-responsive img-centered" alt="">
-                            <h2>Project Title</h2>
-                            <hr class="colored">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
-                        </div>
-                        <div class="col-lg-12">
-                            <img src="/img/portfolio/tablet-screens.png" class="img-responsive img-centered" alt="">
-                        </div>
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
-                                </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">April 2015</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Example Modal 3 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('assets/img/portfolio/bg-3.jpg')">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="modal-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <img src="assets/img/client-logos/logo-1.png" class="img-responsive img-centered" alt="">
-                            <h2>Project Title</h2>
-                            <hr class="colored">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
-                        </div>
-                        <div class="col-lg-12">
-                            <img src="assets/img/portfolio/mobile-screens.png" class="img-responsive img-centered" alt="">
-                        </div>
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
-                                </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">April 2015</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Example Modal 4 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true" style="background-image: url('assets/img/portfolio/bg-4.jpg')">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="modal-body">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <img src="assets/img/client-logos/logo-2.png" class="img-responsive img-centered" alt="">
-                            <h2>Project Title</h2>
-                            <hr class="colored">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos modi in tenetur vero voluptatum sapiente dolores eligendi nemo iste ea. Omnis, odio enim sint quam dolorum dolorem. Nostrum, minus, ad.</p>
-                        </div>
-                        <div class="col-lg-12">
-                            <img src="assets/img/portfolio/tablet-screens.png" class="img-responsive img-centered" alt="">
-                        </div>
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <ul class="list-inline item-details">
-                                <li>Client: <strong><a href="http://startbootstrap.com">Start Bootstrap</a></strong>
-                                </li>
-                                <li>Date: <strong><a href="http://startbootstrap.com">April 2015</a></strong>
-                                </li>
-                                <li>Service: <strong><a href="http://startbootstrap.com">Web Development</a></strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Style Switcher - FOR DEMO PURPOSES ONLY -->
-    <div id="style-switcher" class="close-style-switcher animated bounce">
-        <!--Panel Button -->
-        <a class="panel-button"><i class="fa fa-gear"></i></a>
-        <!-- Colors -->
-        <div class="segment">
-            <h4>Theme Colors</h4>
-            <a title="vitality-red" class="switcher red-bg"></a>
-            <a title="vitality-orange" class="switcher orange-bg"></a>
-            <a title="vitality-yellow" class="switcher yellow-bg"></a>
-            <a title="vitality-green" class="switcher green-bg"></a>
-            <a title="vitality-turquoise" class="switcher turquoise-bg"></a>
-            <a title="vitality-aqua" class="switcher aqua-bg"></a>
-            <a title="vitality-blue" class="switcher blue-bg"></a>
-            <a title="vitality-purple" class="switcher purple-bg"></a>
-            <a title="vitality-pink" class="switcher pink-bg"></a>
-            <a title="vitality-tan" class="switcher tan-bg"></a>
-        </div>
-        <div class="segment">
-            <h4>Samples</h4>
-            <ul class="list-unstyled">
-                <li><a href="agency.html">Agency</a>
-                </li>
-                <li><a href="creative.html">Creative <strong><small>(NEW)</small></strong></a>
-                </li>
-                <li><a href="culinary.html">Culinary</a>
-                </li>
-                <li><a href="fashion.html">Fashion</a>
-                </li>
-                <li><a href="legal.html">Legal</a>
-                </li>
-                <li><a href="video.html">Video</a>
-                </li>
-            </ul>
-        </div>
-        <div class="segment">
-            <a href="index.html">
-                <small>Back to Preview Page</small>
-            </a>
-        </div>
-    </div>
-    <!-- End Style Switcher -->
+
     <!-- Core Scripts -->
     <script src="../js/principal/jquery.js"></script>
     <script src="../js/principal/bootstrap.min.js"></script>
@@ -1274,146 +844,6 @@
  * Copyright 2013-2015 Start Bootstrap Themes
  * To use this theme you must have a license purchased at WrapBootstrap (https://wrapbootstrap.com)
  */
-
-(function($) {
-    "use strict"; // Start of use strict
-
-    // Smooth Scrolling: Smooth scrolls to an ID on the current page.
-    // To use this feature, add a link on your page that links to an ID, and add the .page-scroll class to the link itself. See the docs for more details.
-    $('a.page-scroll').bind('click', function(event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 50)
-        }, 1250, 'easeInOutExpo');
-        event.preventDefault();
-    });
-
-    // Activates floating label headings for the contact form.
-    $("body").on("input propertychange", ".floating-label-form-group", function(e) {
-        $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
-    }).on("focus", ".floating-label-form-group", function() {
-        $(this).addClass("floating-label-form-group-with-focus");
-    }).on("blur", ".floating-label-form-group", function() {
-        $(this).removeClass("floating-label-form-group-with-focus");
-    });
-
-    // Closes the Responsive Menu on Menu Item Click
-    $('.navbar-collapse ul li a').click(function() {
-        $('.navbar-toggle:visible').click();
-    });
-
-    // Owl Carousel Settings
-    $(".about-carousel").owlCarousel({
-        items: 3,
-        navigation: true,
-        pagination: false,
-        navigationText: [
-            "<i class='fa fa-angle-left'></i>",
-            "<i class='fa fa-angle-right'></i>"
-        ],
-    });
-
-    $(".portfolio-carousel").owlCarousel({
-        singleItem: true,
-        navigation: true,
-        pagination: false,
-        navigationText: [
-            "<i class='fa fa-angle-left'></i>",
-            "<i class='fa fa-angle-right'></i>"
-        ],
-        autoHeight: true,
-        mouseDrag: false,
-        touchDrag: false,
-        transitionStyle: "fadeUp"
-    });
-
-    $(".testimonials-carousel").owlCarousel({
-        singleItem: true,
-        navigation: true,
-        pagination: true,
-        autoHeight: true,
-        navigationText: [
-            "<i class='fa fa-angle-left'></i>",
-            "<i class='fa fa-angle-right'></i>"
-        ],
-        transitionStyle: "backSlide"
-    });
-
-    $(".portfolio-gallery").owlCarousel({
-        items: 3,
-    });
-
-    // Magnific Popup jQuery Lightbox Gallery Settings
-    $('.gallery-link').magnificPopup({
-        type: 'image',
-        gallery: {
-            enabled: true
-        },
-        image: {
-            titleSrc: 'title'
-        }
-    });
-
-    // Formstone Background - Video Background Settings
-    $("header.video").background({
-        source: {
-            poster: "assets/img/bg-mobile-fallback.jpg",
-            mp4: "assets/mp4/camera.mp4"
-        }
-    });
-
-    // Scrollspy: Highlights the navigation menu items while scrolling.
-    $('body').scrollspy({
-        target: '.navbar-fixed-top',
-        offset: 51
-    })
-
-    // Portfolio Filtering Scripts & Hover Effect
-    var filterList = {
-        init: function() {
-
-            // MixItUp plugin
-            // http://mixitup.io
-            $('#portfoliolist').mixitup({
-                targetSelector: '.portfolio',
-                filterSelector: '.filter',
-                effects: ['fade'],
-                easing: 'snap',
-                // call the hover effect
-                onMixEnd: filterList.hoverEffect()
-            });
-
-        },
-
-        hoverEffect: function() {
-
-            // Simple parallax effect
-            $('#portfoliolist .portfolio').hover(
-                function() {
-                    $(this).find('.caption').stop().animate({
-                        bottom: 0
-                    }, 200, 'easeOutQuad');
-                    $(this).find('img').stop().animate({
-                        top: -20
-                    }, 300, 'easeOutQuad');
-                },
-                function() {
-                    $(this).find('.caption').stop().animate({
-                        bottom: -75
-                    }, 200, 'easeInQuad');
-                    $(this).find('img').stop().animate({
-                        top: 0
-                    }, 300, 'easeOutQuad');
-                }
-            );
-
-        }
-
-    };
-
-    filterList.init();
-
-})(jQuery); // End of use strict
 
 // Load WOW.js on non-touch devices
 var isPhoneDevice = "ontouchstart" in document.documentElement;
