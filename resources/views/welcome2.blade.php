@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Vitality</title>
+    <title>DoberMan</title>
     <!-- Bootstrap Core CSS -->
     <link href="../css/principal/bootstrap.min.css" rel="stylesheet" type="text/css">
     <!-- Retina.js - Load first for faster HQ mobile images. -->
@@ -28,18 +28,8 @@
     <link href="../css/principal/magnific-popup.css" rel="stylesheet" type="text/css">
     <link href="../css/principal/background.css" rel="stylesheet" type="text/css">
     <link href="../css/principal/animate.css" rel="stylesheet" type="text/css">
-    <!-- Vitality Theme CSS -->
-    <!-- Uncomment the color scheme you want to use. -->
-    <!-- <link href="assets/css/vitality-red.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="assets/css/vitality-aqua.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="assets/css/vitality-blue.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="assets/css/vitality-green.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="assets/css/vitality-orange.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="assets/css/vitality-pink.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="assets/css/vitality-purple.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="assets/css/vitality-tan.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="assets/css/vitality-turquoise.css" rel="stylesheet" type="text/css"> -->
-    <!-- <link href="assets/css/vitality-yellow.css" rel="stylesheet" type="text/css"> -->
+    <link href="../css/principal/tooltip-classic.css" rel="stylesheet" type="text/css">
+
     <!-- Style Switcher CSS - Demo Purposes Only! -->
     <link id="changeable-colors" rel="stylesheet" href="../css/principal/vitality-red.css">
     <link href="..css/principal/style-switcher.css" rel="stylesheet">
@@ -129,7 +119,7 @@
                         <a class="page-scroll" href="#work">Work</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#pricing">Pricing</a>
+                        <a class="page-scroll" href="#pricing">Habilidades</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
@@ -145,7 +135,7 @@
             <img src="/img/two_profile.png" class="img-responsive img-centered" alt="">
             <div class="brand-name">Vitality</div>
             <hr class="colored">
-            <div class="brand-name-subtext">by Start Bootstrap</div>
+            <div class="brand-name-subtext">by @miguelgoma</div>
         </div>
         <div class="scroll-down">
             <a class="btn page-scroll" href="#portfolio"><i class="fa fa-angle-down fa-fw"></i></a>
@@ -164,21 +154,12 @@
                     <div class="preview-pane">
                         <a href="fashion.html">
                         <img class="img-responsive" src="{{ asset('/img/two_screenshot-fashion.png')}}" alt="">
-                            <h3>CRUD AJAX APLICATION</h3>
-                            <hr class="colored">
-                            <p class="text-muted">Ideal For:</p>
-                            <ul class="list-unstyled text-muted">
-                                <li>
-                                    <em>Boutiques</em>
-                                </li>
-                                <li>
-                                    <em>Designers</em>
-                                </li>
-                                <li>
-                                    <em>Retail Stores</em>
-                                </li>
-                            </ul>
                         </a>
+                            <h3>CRUD AJAX APLICATION</h3>
+                            <p class="text-muted">
+                                <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
+                            </p>
+                                <i class="fa fa-info-circle" aria-hidden="true"></i> <-> <i class="fa fa-laptop" aria-hidden="true"></i>                                
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -186,19 +167,10 @@
                         <a href="legal.html">
                         <img class="img-responsive" src="{{ asset('/img/two_screenshot-legal.png')}}" alt="">
                             <h3>Cotizador de autos</h3>
-                            <hr class="colored">
-                            <p class="text-muted">Ideal For:</p>
-                            <ul class="list-unstyled text-muted">
-                                <li>
-                                    <em>Lawyers</em>
-                                </li>
-                                <li>
-                                    <em>Law Firms</em>
-                                </li>
-                                <li>
-                                    <em>Consultants</em>
-                                </li>
-                            </ul>
+                            <p class="text-muted">
+                                <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
+                            </p>
+                            <i class="fa fa-info-circle" aria-hidden="true"></i> <-> <i class="fa fa-laptop" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
@@ -207,10 +179,10 @@
                         <a href="video.html">
                         <img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt="">
                             <h3>ECOMMERCE WITH STRIPE</h3>
-                            <hr class="colored">
                             <p class="text-muted">
                                 <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
                             </p>
+                            <i class="fa fa-info-circle" aria-hidden="true"></i> <-> <i class="fa fa-laptop" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
@@ -221,20 +193,11 @@
                         <a href="agency.html">
                             <img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt="">
                             <h3>NEWSLETTERS</h3>
-                            <hr class="colored">
-                            <p class="text-muted">Ideal For:</p>
-                            <ul class="list-unstyled text-muted">
-                                <li>
-                                    <em>Agencies</em>
-                                </li>
-                                <li>
-                                    <em>Businesses</em>
-                                </li>
-                                <li>
-                                    <em>Consultants</em>
-                                </li>
-                            </ul>
                         </a>
+                        <p class="text-muted">
+                                <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
+                            </p>
+                                <i class="fa fa-info-circle" aria-hidden="true"></i> <-> <i class="fa fa-laptop" aria-hidden="true"></i>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -242,20 +205,11 @@
                         <a href="creative.html">
                         <img class="img-responsive" src="{{ asset('/img/two_screenshot-creative.png')}}" alt="">
                             <h3>MANIPULACION DE DATOS</h3>
-                            <hr class="colored">
-                            <p class="text-muted">Ideal For:</p>
-                            <ul class="list-unstyled text-muted">
-                                <li>
-                                    <em>Personal Portfolios</em>
-                                </li>
-                                <li>
-                                    <em>Freelancers</em>
-                                </li>
-                                <li>
-                                    <em>Photographers</em>
-                                </li>
-                            </ul>
                         </a>
+                        <p class="text-muted">
+                                <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
+                            </p>
+                                <i class="fa fa-info-circle" aria-hidden="true"></i> <-> <i class="fa fa-laptop fa-2" aria-hidden="true"></i>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -263,20 +217,11 @@
                         <a href="culinary.html">
                         <img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt="">
                             <h3>GOOGLE MAPS</h3>
-                            <hr class="colored">
-                            <p class="text-muted">Ideal For:</p>
-                            <ul class="list-unstyled text-muted">
-                                <li>
-                                    <em>Restaurants</em>
-                                </li>
-                                <li>
-                                    <em>Bakeries</em>
-                                </li>
-                                <li>
-                                    <em>Caterers</em>
-                                </li>
-                            </ul>
                         </a>
+                        <p class="text-muted">
+                                <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
+                            </p>
+                                <i class="fa fa-info-circle" aria-hidden="true"></i> <-> <i class="fa fa-laptop" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
@@ -287,83 +232,33 @@
                         <a href="agency.html">
                             <img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt="">
                             <h3>Animations </h3>
-                            <hr class="colored">
-                            <p class="text-muted">Ideal For:</p>
-                            <ul class="list-unstyled text-muted">
-                                <li>
-                                    <em>Agencies</em>
-                                </li>
-                                <li>
-                                    <em>Businesses</em>
-                                </li>
-                                <li>
-                                    <em>Consultants</em>
-                                </li>
-                            </ul>
                         </a>
+                        <p class="text-muted"><em>An example of the agency theme with a video background for the header.</em></p>
+                        <i class="fa fa-info-circle" aria-hidden="true"></i> <-> <i class="fa fa-laptop" aria-hidden="true"></i>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="preview-pane">
                         <a href="creative.html">
-                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-creative.png')}}" alt="">
-                            <h3>API Twitter </h3>
-                            <hr class="colored">
-                            <p class="text-muted">Ideal For:</p>
-                            <ul class="list-unstyled text-muted">
-                                <li>
-                                    <em>Personal Portfolios</em>
-                                </li>
-                                <li>
-                                    <em>Freelancers</em>
-                                </li>
-                                <li>
-                                    <em>Photographers</em>
-                                </li>
-                            </ul>
-                        </a>
+                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-creative.png')}}" alt=""><h3>API Twitter </h3></a>
+                        <p class="text-muted"><em>An example of the agency theme with a video background for the header.</em></p>
+                        <i class="fa fa-info-circle" aria-hidden="true"></i> <-> <i class="fa fa-laptop" aria-hidden="true"></i>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="preview-pane">
                         <a href="culinary.html">
-                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt="">
-                            <h3>VOICE BUNNY </h3>
-                            <hr class="colored">
-                            <p class="text-muted">Ideal For:</p>
-                            <ul class="list-unstyled text-muted">
-                                <li>
-                                    <em>Restaurants</em>
-                                </li>
-                                <li>
-                                    <em>Bakeries</em>
-                                </li>
-                                <li>
-                                    <em>Caterers</em>
-                                </li>
-                            </ul>
-                        </a>
+                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt=""><h3>VOICE BUNNY </h3></a>
+                        <p class="text-muted"><em>An example of the agency theme with a video background for the header.</em></p>
+                        <i class="fa fa-info-circle" aria-hidden="true"></i> <-> <i class="fa fa-laptop" aria-hidden="true"></i>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="preview-pane">
                         <a href="culinary.html">
-                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt="">
-                            <h3>VOICE BUNNY </h3>
-                            <hr class="colored">
-                            <p class="text-muted">Ideal For:</p>
-                            <ul class="list-unstyled text-muted">
-                                <li>
-                                    <em>Restaurants</em>
-                                </li>
-                                <li>
-                                    <em>Bakeries</em>
-                                </li>
-                                <li>
-                                    <em>Caterers</em>
-                                </li>
-                            </ul>
-                        </a>
+                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt=""><h3>VOICE BUNNY </h3></a>
+                        <p class="text-muted"><em>An example of the agency theme with a video background for the header.</em></p>
+                        <i class="fa fa-info-circle" aria-hidden="true"></i> <-> <i class="fa fa-laptop" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
@@ -613,7 +508,7 @@
         <div class="container wow fadeIn" style="visibility: hidden; animation-name: none;">
             <div class="row text-center">
                 <div class="col-lg-12">
-                    <h2>Pricing</h2>
+                    <h2>Habilidades</h2>
                     <hr class="colored">
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, quae, laborum, voluptate delectus odio doloremque error porro obcaecati nemo animi ducimus quaerat nostrum? Ab molestiae eaque et atque architecto reiciendis.</p>
                 </div>
@@ -788,14 +683,12 @@
         </div>
     </footer>
 
-    <!-- Core Scripts -->
     <script src="../js/principal/jquery.js"></script>
     <script src="../js/principal/bootstrap.min.js"></script>
-    <!-- Plugin Scripts -->
     <script src="../js/principal/jquery.easing.min.js"></script>
     <script src="../js/principal/classie.js"></script>
     <script src="../js/principal/cbpAnimatedHeader.js"></script>
-    <script src="../js/principal/owl-carousel/owl.carousel.js"></script>
+    <script src="../js/principal/owl.carousel.js"></script>
     <script src="../js/principal/jquery.magnific-popup.min.js"></script>
     <script src="../js/principal/core.js"></script>
     <script src="../js/principal/transition.js"></script>
@@ -804,13 +697,7 @@
     <script src="../js/principal/wow.min.js"></script>
     <script src="../js/principal/contact_me.js"></script>
     <script src="../js/principal/jqBootstrapValidation.js"></script>
-    <!-- Vitality Theme Scripts -->
     <script src="../js/principal/vitality.js"></script>
-    <!-- Style Switcher Scripts - Demo Purposes Only! -->
-    <script src="../demo/style.switcher.js"></script>
-
-
-
 </body>
     
 
@@ -840,24 +727,23 @@
 
     <script type="text/javascript">
     /*!
- * Vitality v1.3.5 (http://themes.startbootstrap.com/vitality-v1.3.5)
- * Copyright 2013-2015 Start Bootstrap Themes
- * To use this theme you must have a license purchased at WrapBootstrap (https://wrapbootstrap.com)
- */
+     * Vitality v1.3.5 (http://themes.startbootstrap.com/vitality-v1.3.5)
+     * Copyright 2013-2015 Start Bootstrap Themes
+     * To use this theme you must have a license purchased at WrapBootstrap (https://wrapbootstrap.com)
+     */
 
-// Load WOW.js on non-touch devices
-var isPhoneDevice = "ontouchstart" in document.documentElement;
-$(document).ready(function() {
-    if (isPhoneDevice) {
-        //mobile
-    } else {
-        //desktop               
-        // Initialize WOW.js
-        wow = new WOW({
-            offset: 50
-        })
-        wow.init();
-    }
-});
-
-</script>
+    // Load WOW.js on non-touch devices
+    var isPhoneDevice = "ontouchstart" in document.documentElement;
+    $(document).ready(function() {
+        if (isPhoneDevice) {
+            //mobile
+        } else {
+            //desktop               
+            // Initialize WOW.js
+            wow = new WOW({
+                offset: 50
+            })
+            wow.init();
+        }
+    });
+    </script>
