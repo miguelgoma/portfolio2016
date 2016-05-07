@@ -110,19 +110,19 @@
                         <a class="page-scroll" href="#portfolio">Portafolio</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#about">Acerca de</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#process">Process</a>
+                        <a class="page-scroll" href="#process">Proceso</a>
                     </li>
                     <li class="">
-                        <a class="page-scroll" href="#work">Work</a>
+                        <a class="page-scroll" href="#work">Trabajo</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#pricing">Habilidades</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contact">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -133,7 +133,7 @@
     <header style="background-image: url('/img/two_bg-header.jpg');">
         <div class="intro-content">
             <img src="/img/two_profile.png" class="img-responsive img-centered" alt="">
-            <div class="brand-name">Vitality</div>
+            <div class="brand-name">doberMan</div>
             <hr class="colored">
             <div class="brand-name-subtext">by @miguelgoma</div>
         </div>
@@ -152,76 +152,64 @@
             <div class="row wow fadeIn" >
                 <div class="col-md-4">
                     <div class="preview-pane">
-                        <a href="fashion.html">
-                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-fashion.png')}}" alt="">
-                        </a>
+                        <a href="fashion.html"><img class="img-responsive" src="{{ asset('/img/two_screenshot-fashion.png')}}" alt=""></a>
                             <h3>CRUD AJAX APLICATION</h3>
                             <p class="text-muted">
                                 <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
                             </p>
-                                <i class="fa fa-info-circle" aria-hidden="true"></i> <-> <i class="fa fa-laptop" aria-hidden="true"></i>                                
+                                <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop" aria-hidden="true"></i>                                
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="preview-pane">
-                        <a href="legal.html">
-                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-legal.png')}}" alt="">
+                        <a href="legal.html"><img class="img-responsive" src="{{ asset('/img/two_screenshot-legal.png')}}" alt=""></a>
                             <h3>Cotizador de autos</h3>
                             <p class="text-muted">
                                 <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
                             </p>
-                            <i class="fa fa-info-circle" aria-hidden="true"></i> <-> <i class="fa fa-laptop" aria-hidden="true"></i>
-                        </a>
+                            <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop" aria-hidden="true"></i>                        
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="preview-pane">
-                        <a href="video.html">
-                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt="">
+                        <a href="video.html"><img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
                             <h3>ECOMMERCE WITH STRIPE</h3>
                             <p class="text-muted">
                                 <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
                             </p>
-                            <i class="fa fa-info-circle" aria-hidden="true"></i> <-> <i class="fa fa-laptop" aria-hidden="true"></i>
-                        </a>
+                            <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
             <div class="row content-row wow fadeIn">
             <div class="col-md-4">
                     <div class="preview-pane">
-                        <a href="agency.html">
-                            <img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt="">
+                        <a href="agency.html"><img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
                             <h3>NEWSLETTERS</h3>
-                        </a>
                         <p class="text-muted">
                                 <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
                             </p>
-                                <i class="fa fa-info-circle" aria-hidden="true"></i> <-> <i class="fa fa-laptop" aria-hidden="true"></i>
+                                <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop" aria-hidden="true"></i>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="preview-pane">
-                        <a href="creative.html">
-                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-creative.png')}}" alt="">
+                        <a href="creative.html"><img class="img-responsive" src="{{ asset('/img/two_screenshot-creative.png')}}" alt=""></a>
                             <h3>MANIPULACION DE DATOS</h3>
-                        </a>
                         <p class="text-muted">
                                 <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
                             </p>
-                                <i class="fa fa-info-circle" aria-hidden="true"></i> <-> <i class="fa fa-laptop fa-2" aria-hidden="true"></i>
+                                <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop fa-2" aria-hidden="true"></i>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="preview-pane">
-                        <a href="culinary.html">
-                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt="">
+                        <a href="culinary.html"><img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt=""></a>
                             <h3>GOOGLE MAPS</h3>
-                        </a>
                         <p class="text-muted">
                                 <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
                             </p>
-                                <i class="fa fa-info-circle" aria-hidden="true"></i> <-> <i class="fa fa-laptop" aria-hidden="true"></i>
+                                <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
@@ -229,36 +217,37 @@
             <div class="row content-row wow fadeIn">
                 <div class="col-md-3">
                     <div class="preview-pane">
-                        <a href="agency.html">
-                            <img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt="">
-                            <h3>Animations </h3>
-                        </a>
+                        <a href="agency.html"><img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
+                        <h3>Animations </h3>
                         <p class="text-muted"><em>An example of the agency theme with a video background for the header.</em></p>
-                        <i class="fa fa-info-circle" aria-hidden="true"></i> <-> <i class="fa fa-laptop" aria-hidden="true"></i>
+                        <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop" aria-hidden="true"></i>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="preview-pane">
                         <a href="creative.html">
-                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-creative.png')}}" alt=""><h3>API Twitter </h3></a>
+                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-creative.png')}}" alt=""></a>
+                        <h3>API Twitter </h3>
                         <p class="text-muted"><em>An example of the agency theme with a video background for the header.</em></p>
-                        <i class="fa fa-info-circle" aria-hidden="true"></i> <-> <i class="fa fa-laptop" aria-hidden="true"></i>
+                        <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop" aria-hidden="true"></i>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="preview-pane">
                         <a href="culinary.html">
-                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt=""><h3>VOICE BUNNY </h3></a>
+                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt=""></a>
+                        <h3>VOICE BUNNY </h3>
                         <p class="text-muted"><em>An example of the agency theme with a video background for the header.</em></p>
-                        <i class="fa fa-info-circle" aria-hidden="true"></i> <-> <i class="fa fa-laptop" aria-hidden="true"></i>
+                        <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop" aria-hidden="true"></i>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="preview-pane">
                         <a href="culinary.html">
-                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt=""><h3>VOICE BUNNY </h3></a>
+                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt=""></a>
+                        <h3>VOICE BUNNY</h3>
                         <p class="text-muted"><em>An example of the agency theme with a video background for the header.</em></p>
-                        <i class="fa fa-info-circle" aria-hidden="true"></i> <-> <i class="fa fa-laptop" aria-hidden="true"></i>
+                        <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
@@ -270,8 +259,9 @@
         <div class="container-fluid">
             <div class="row text-center">
                 <div class="col-lg-12 wow fadeIn" style="visibility: show; animation-name: none;">
-                    <h1>A Theme for Creatives &amp; Agencies</h1>
-                    <p>Vitality is the perfect theme for a freelance professional or an agency.</p>
+                    <h1>Un sitio dice mas que mil palabras</h1>
+                    <p>El propósito de este sitio es mostrar el trabajo y habilidades de su creador @miguelgoma.</p>
+                    <p>Formado como programador y diseñador web por gusto me apasionan las tecnologías web y construir productos que generen riqueza y bienestar para todos.</p>
                     <hr class="colored">
                 </div>
             </div>
@@ -429,9 +419,9 @@
         <div class="container wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-                    <span class="quote">Good <span class="text-primary">design</span> is finding that perfect balance between the way something <span class="text-primary">looks</span> and how it <span class="text-primary">functions</span>.</span>
+                    <span class="quote">Un buen <span class="text-primary">diseño</span> es encontrar el perfecto balance entre la forma en como se <span class="text-primary"> ve </span> y como <span class="text-primary">funciona</span>.</span>
                     <hr class=" colored">
-                    <a class="btn btn-outline-light page-scroll" href="#contact">Let's Find It</a>
+                    <a class="btn btn-outline-light page-scroll" href="#contact">Averigualo</a>
                 </div>
             </div>
         </div>
@@ -440,9 +430,9 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-12 wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
-                    <h2>Our Process</h2>
+                    <h2>Nuestro proceso</h2>
                     <hr class="colored">
-                    <p>Here is an overview of how we approach each new project.</p>
+                    <p>He aquí un resumen de cómo nos acercamos a cada nuevo proyecto.</p>
                 </div>
             </div>
             <div class="row content-row">
@@ -454,10 +444,10 @@
                         <div class="media-body">
                             <h3 class="media-heading">Plan</h3>
                             <ul>
-                                <li>Client interview</li>
-                                <li>Gather consumer data</li>
-                                <li>Create content strategy</li>
-                                <li>Analyze research</li>
+                                <li>Entrevista con el cliente</li>
+                                <li>Recopilar datos de los consumidores</li>
+                                <li>Crear estrategia de contenido</li>
+                                <li>Analizar la investigación</li>
                             </ul>
                         </div>
                     </div>
@@ -468,12 +458,12 @@
                             <i class="fa fa-pencil"></i>
                         </div>
                         <div class="media-body">
-                            <h3 class="media-heading">Create</h3>
+                            <h3 class="media-heading">Creación</h3>
                             <ul>
-                                <li>Build wireframe</li>
-                                <li>Gather client feedback</li>
-                                <li>Code development</li>
-                                <li>Marketing review</li>
+                                <li>Construir bocetos</li>
+                                <li>Retroalimentacipon de información de los clientes</li>
+                                <li>Desarrollo de Código</li>
+                                <li>Apoyo de marketing</li>
                             </ul>
                         </div>
                     </div>
@@ -484,12 +474,13 @@
                             <i class="fa fa-rocket"></i>
                         </div>
                         <div class="media-body">
-                            <h3 class="media-heading">Launch</h3>
+                            <h3 class="media-heading">Lanzamiento</h3>
                             <ul>
-                                <li>Deploy website</li>
-                                <li>Market product launch</li>
-                                <li>Collect UX data</li>
-                                <li>Quarterly maintenence</li>
+                                <li>Implementar página web</li>
+                                <li>Lanzamiento de un producto de mercado</li>
+                                <li>Recopilar datos UX</li>
+                                <li>Detectar areas de oportunidad</li>
+                                <li>Mantenimiento trimestral</li>
                             </ul>
                         </div>
                     </div>
@@ -567,7 +558,7 @@
     </section>
     <section class="cta-form bg-dark">
         <div class="container text-center">
-            <h3>Subscribe to our newsletter!</h3>
+            <h3>Reciba un boletín con la descripción de servicios</h3>
             <hr class="colored">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
@@ -576,9 +567,9 @@
                         <!-- Replace the form action in the line below with your MailChimp embed action! For more informatin on how to do this please visit the Docs! -->
                         <form role="form" action="//startbootstrap.us3.list-manage.com/subscribe/post?u=531af730d8629808bd96cf489&amp;id=afb284632f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="">
                             <div class="input-group input-group-lg">
-                                <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email address...">
+                                <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Ingresa tu Email...">
                                 <span class="input-group-btn">
-                                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Subscribe!</button>
+                                    <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary">Enviar!</button>
                                 </span>
                             </div>
                             <div id="mce-responses">
@@ -596,9 +587,9 @@
         <div class="container wow fadeIn" style="visibility: hidden; animation-name: none;">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Contact Us</h2>
+                    <h2>Contacto</h2>
                     <hr class="colored">
-                    <p>Please tell us about your next project and we will let you know what we can do to help you.</p>
+                    <p>Por favor, cuéntenos sobre su próximo proyecto y vamos a hacerle saber lo que podemos hacer para ayudarle.</p>
                 </div>
             </div>
             <div class="row content-row">
@@ -606,29 +597,29 @@
                     <form name="sentMessage" id="contactForm" novalidate="">
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" required="" data-validation-required-message="Please enter your name.">
+                                <label>Nombre</label>
+                                <input type="text" class="form-control" placeholder="Nombre" id="name" required="" data-validation-required-message="Please enter your name.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Email Address</label>
-                                <input type="email" class="form-control" placeholder="Email Address" id="email" required="" data-validation-required-message="Please enter your email address.">
+                                <label>Email</label>
+                                <input type="email" class="form-control" placeholder="Email" id="email" required="" data-validation-required-message="Please enter your email address.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required="" data-validation-required-message="Please enter your phone number.">
+                                <label>Teléfono</label>
+                                <input type="tel" class="form-control" placeholder="Teléfono" id="phone" required="" data-validation-required-message="Please enter your phone number.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <label>Message</label>
-                                <textarea rows="5" class="form-control" placeholder="Message" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
+                                <label>Mensaje</label>
+                                <textarea rows="5" class="form-control" placeholder="Mensaje" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -636,7 +627,7 @@
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-outline-dark">Send</button>
+                                <button type="submit" class="btn btn-outline-dark">Enviar</button>
                             </div>
                         </div>
                     </form>
