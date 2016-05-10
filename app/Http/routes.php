@@ -17,6 +17,19 @@ Route::get('/', function () {
     return view('welcome2');
 });
 
+Route::get('/data', function () {
+   return view('data2');
+});
+
+Route::get('/voice','DobermanController@voice');
+
+
+
+
+
+
+
+
 
 Route::get('/cow', function () {
     echo '<pre>'.Cow::say("Ohmg I'm a cow!").'</pre>';

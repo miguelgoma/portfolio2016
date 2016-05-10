@@ -74,12 +74,40 @@
     .preview-pane a:hover img {
         opacity: 0.5;
     }
+
     .label-primary {
         background-color: #EF4035;
     }
     .cta-list {
         margin-top: 30px;
     }
+
+
+/*tool tip*/
+.tooltip {
+    display: inline-block;
+    border-bottom: 1px dotted black;
+    z-index: 10;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+/*tool tip*/
     </style>
 
 </head>
@@ -142,17 +170,15 @@
         </div>
     </header>
 
-
     <section id="portfolio">
         <div class="preview-pane">
             <h1>Portafolio web</h1>
         </div>
-
         <div class="container" id="previews">
             <div class="row wow fadeIn" >
                 <div class="col-md-4">
                     <div class="preview-pane">
-                        <a href="fashion.html"><img class="img-responsive" src="{{ asset('/img/two_screenshot-fashion.png')}}" alt=""></a>
+                        <a href="fashion"><img class="img-responsive" src="{{ asset('/img/two_screenshot-fashion.png')}}" alt=""></a>
                             <h3>CRUD AJAX APLICATION</h3>
                             <p class="text-muted">
                                 <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
@@ -162,7 +188,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="preview-pane">
-                        <a href="legal.html"><img class="img-responsive" src="{{ asset('/img/two_screenshot-legal.png')}}" alt=""></a>
+                        <a href="legal"><img class="img-responsive" src="{{ asset('/img/two_screenshot-legal.png')}}" alt=""></a>
                             <h3>Cotizador de autos</h3>
                             <p class="text-muted">
                                 <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
@@ -172,7 +198,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="preview-pane">
-                        <a href="video.html"><img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
+                        <a href="video"><img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
                             <h3>ECOMMERCE WITH STRIPE</h3>
                             <p class="text-muted">
                                 <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
@@ -184,7 +210,7 @@
             <div class="row content-row wow fadeIn">
             <div class="col-md-4">
                     <div class="preview-pane">
-                        <a href="agency.html"><img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
+                        <a href="agency"><img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
                             <h3>NEWSLETTERS</h3>
                         <p class="text-muted">
                                 <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
@@ -194,7 +220,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="preview-pane">
-                        <a href="creative.html"><img class="img-responsive" src="{{ asset('/img/two_screenshot-creative.png')}}" alt=""></a>
+                        <a href="data"><img class="img-responsive" src="{{ asset('/img/two_screenshot-creative.png')}}" alt=""></a>
                             <h3>MANIPULACION DE DATOS</h3>
                         <p class="text-muted">
                                 <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
@@ -204,7 +230,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="preview-pane">
-                        <a href="culinary.html"><img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt=""></a>
+                        <a href="culinary"><img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt=""></a>
                             <h3>GOOGLE MAPS</h3>
                         <p class="text-muted">
                                 <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
@@ -217,7 +243,7 @@
             <div class="row content-row wow fadeIn">
                 <div class="col-md-3">
                     <div class="preview-pane">
-                        <a href="agency.html"><img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
+                        <a href="agency"><img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
                         <h3>Animations </h3>
                         <p class="text-muted"><em>An example of the agency theme with a video background for the header.</em></p>
                         <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop" aria-hidden="true"></i>
@@ -225,7 +251,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="preview-pane">
-                        <a href="creative.html">
+                        <a href="creative">
                         <img class="img-responsive" src="{{ asset('/img/two_screenshot-creative.png')}}" alt=""></a>
                         <h3>API Twitter </h3>
                         <p class="text-muted"><em>An example of the agency theme with a video background for the header.</em></p>
@@ -234,7 +260,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="preview-pane">
-                        <a href="culinary.html">
+                        <a href="culinary">
                         <img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt=""></a>
                         <h3>VOICE BUNNY </h3>
                         <p class="text-muted"><em>An example of the agency theme with a video background for the header.</em></p>
@@ -243,7 +269,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="preview-pane">
-                        <a href="culinary.html">
+                        <a href="voice">
                         <img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt=""></a>
                         <h3>VOICE BUNNY</h3>
                         <p class="text-muted"><em>An example of the agency theme with a video background for the header.</em></p>
@@ -293,124 +319,6 @@
                         <h3>Built with Love</h3>
                         <p>All of our themes are crafted with care, and we strive to make your experience as one of our customers the best as possible.</p>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="bg-gray">
-        <div class="container text-center wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Our Team</h2>
-                    <p>We are a group of digital marketers with a passion for great art that serves a practical purpose.</p>
-                    <hr class="colored">
-                </div>
-            </div>
-            <div class="row content-row">
-                <div class="col-lg-12">
-                    <div class="about-carousel owl-carousel owl-theme" style="opacity: 1; display: block;">
-                        <div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 3800px; left: 0px; display: block;"><div class="owl-item" style="width: 380px;"><div class="item">
-                            <img src="/img/people/1.jpg" class="img-responsive" alt="">
-                            <div class="caption">
-                                <h3>Patricia West</h3>
-                                <hr class="colored">
-                                <p>Marketing Director</p>
-                                <ul class="list-inline social">
-                                    <li>
-                                        <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 380px;"><div class="item">
-                            <img src="/img/people/2.jpg" class="img-responsive" alt="">
-                            <div class="caption">
-                                <h3>Howard Scott</h3>
-                                <hr class="colored">
-                                <p>Sales Manager</p>
-                                <ul class="list-inline social">
-                                    <li>
-                                        <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 380px;"><div class="item">
-                            <img src="/img/people/3.jpg" class="img-responsive" alt="">
-                            <div class="caption">
-                                <h3>Kate Williams</h3>
-                                <hr class="colored">
-                                <p>Creative Director</p>
-                                <ul class="list-inline social">
-                                    <li>
-                                        <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-dribbble fa-fw"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 380px;"><div class="item">
-                            <img src="/img/people/4.jpg" class="img-responsive" alt="">
-                            <div class="caption">
-                                <h3>Amy Vanderbute</h3>
-                                <hr class="colored">
-                                <p>Graphic Artist</p>
-                                <ul class="list-inline social">
-                                    <li>
-                                        <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-dribbble fa-fw"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div></div><div class="owl-item" style="width: 380px;"><div class="item">
-                            <img src="/img/people/5.jpg" class="img-responsive" alt="">
-                            <div class="caption">
-                                <h3>Jeremy Davidson</h3>
-                                <hr class="colored">
-                                <p>Web Developer</p>
-                                <ul class="list-inline social">
-                                    <li>
-                                        <a href="#"><i class="fa fa-facebook fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-twitter fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-linkedin fa-fw"></i></a>
-                                    </li>
-                                    <li>
-                                        <a href="#"><i class="fa fa-github fa-fw"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div></div></div></div>                       
-                        
-                    <div class="owl-controls clickable"><div class="owl-buttons"><div class="owl-prev"><i class="fa fa-angle-left"></i></div><div class="owl-next"><i class="fa fa-angle-right"></i></div></div></div></div>
                 </div>
             </div>
         </div>
@@ -636,7 +544,7 @@
         </div>
     </section>
     <a href="https://wrapbootstrap.com/theme/vitality-multipurpose-one-page-theme-WB02K3KK3" class="btn btn-block btn-full-width">Buy Vitality Now!</a>
-    <footer class="footer" style="background-image: url('/img/two_bg-footer.jpg')">
+    <footer class="footer" style="background-image: url('/img/two_mex.jpg')">
         <div class="container text-center">
             <div class="row">
                 <div class="col-md-4 contact-details">
