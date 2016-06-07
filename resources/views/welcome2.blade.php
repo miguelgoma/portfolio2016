@@ -230,7 +230,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="preview-pane">
-                        <a href="culinary"><img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt=""></a>
+                        <a href="maps"><img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt=""></a>
                             <h3>GOOGLE MAPS</h3>
                         <p class="text-muted">
                                 <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
@@ -415,15 +415,15 @@
             <div class="row content-row">
                 <div class="col-md-4">
                     <div class="pricing-item featured-first">
-                        <h3>Basic</h3>
+                        <h3>Front end</h3>
                         <hr class="colored">
                         <div class="price"><span class="number"><sup>$</sup>25</span> / month</div>
                         <ul class="list-group">
-                            <li class="list-group-item">60 Users</li>
-                            <li class="list-group-item">Unlimited Forums</li>
-                            <li class="list-group-item">Unlimited Reports</li>
-                            <li class="list-group-item">3,000 Entries per Month</li>
-                            <li class="list-group-item">200 MB Storage</li>
+                            <li class="list-group-item">Angular JS</li>
+                            <li class="list-group-item">jQuery</li>
+                            <li class="list-group-item">CSS 2 y 3</li>
+                            <li class="list-group-item">HTML 5</li>
+                            <li class="list-group-item">Bootstrap 3</li>
                             <li class="list-group-item">Unlimited Support</li>
                         </ul>
                         <a href="#" class="btn btn-outline-dark">Sign Up</a>
@@ -431,14 +431,14 @@
                 </div>
                 <div class="col-md-4">
                     <div class="pricing-item featured">
-                        <h3>Plus</h3>
+                        <h3>Back end</h3>
                         <hr class="colored">
                         <div class="price"><span class="number"><sup>$</sup>50</span> / month</div>
                         <ul class="list-group">
-                            <li class="list-group-item"><strong>60</strong> Users</li>
-                            <li class="list-group-item">Unlimited Forums</li>
-                            <li class="list-group-item">Unlimited Reports</li>
-                            <li class="list-group-item"><strong>3,000</strong> Entries per Month</li>
+                            <li class="list-group-item"><strong>PHP</strong> Laravel, Symfony y Zend 2</li>
+                            <li class="list-group-item">Ruby</li>
+                            <li class="list-group-item"><strong>Ruby on rails 4</strong> ORM</li>
+                            <li class="list-group-item"> </li>                            
                             <li class="list-group-item"><strong>200 MB</strong> Storage</li>
                             <li class="list-group-item">Unlimited Support</li>
                         </ul>
@@ -447,11 +447,11 @@
                 </div>
                 <div class="col-md-4">
                     <div class="pricing-item featured-last">
-                        <h3>Premium</h3>
+                        <h3>Others</h3>
                         <hr class="colored">
                         <div class="price"><span class="number"><sup>$</sup>150</span> / month</div>
                         <ul class="list-group">
-                            <li class="list-group-item">60 Users</li>
+                            <li class="list-group-item">Photoshop CS5.5</li>
                             <li class="list-group-item">Unlimited Forums</li>
                             <li class="list-group-item">Unlimited Reports</li>
                             <li class="list-group-item">3,000 Entries per Month</li>

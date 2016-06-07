@@ -21,6 +21,11 @@ Route::get('/data', function () {
    return view('data2');
 });
 
+
+Route::get('/maps', function () {
+    return view('maps');
+});
+
 Route::get('/voice','DobermanController@voice');
 
 
