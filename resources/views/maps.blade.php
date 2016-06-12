@@ -1,51 +1,62 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-    <title>Rectangles</title>
-    <style>
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      #map {
-        height: 50%;
-      }
-    </style>
-    <script>
+@extends('layouts.top-nav')
 
-// This example adds a red rectangle to a map.
+@section('content')
+<h1>Mapas
+<small>¿De que tipo necesita?</small>
+</h1>
 
-function initMap() {
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 11,
-    center: {lat: 33.678, lng: -116.243},
-    mapTypeId: google.maps.MapTypeId.HYBRID
-  });
+<div class="box">
+        <div class="box-header with-border">
+          <h3 class="box-title">Roadmap</h3>
+        </div>
+        <div class="box-body">
+          Predeterminado, especifica una imagen de mapa de ruta estándar, como habitualmente se muestra en el sitio web de Google Maps. Si no se especifica un valor de maptype, Google Static Maps API proporciona mosaicos de roadmap de forma predeterminada.
+        </div>
+        <div class="box-body"><center><a href="maps/roadmap"><img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt=""></a></center></div>
+        <!-- /.box-body -->
+        <div class="box-footer">
+          Ver
+        </div>
+        <!-- /.box-footer-->
+</div>
 
-  var rectangle = new google.maps.Rectangle({
-    strokeColor: '#FF0000',
-    strokeOpacity: 0.8,
-    strokeWeight: 2,
-    fillColor: '#FF0000',
-    fillOpacity: 0.35,
-    map: map,
-    bounds: {
-      north: 33.685,
-      south: 33.671,
-      east: -116.234,
-      west: -116.251
-    }
-  });
-}
+<div class="box">
+        <div class="box-header with-border">
+          <h3 class="box-title">Satellite</h3></div>
+        <div class="box-body">Especifica una imagen satelital.</div>
+        <div class="box-body"><center><a href="voice"><img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt=""></a></center></div>
+        <!-- /.box-body -->
+        <div class="box-footer">
+          Ver
+        </div>
+        <!-- /.box-footer-->
+</div>
 
-    </script>
-  </head>
-  <body>
-    <div id="map"></div>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALFYAPf_3Cc1x1HjAM20LucKuJABzQXDw&signed_in=true&callback=initMap"></script>
-  </body>
-</html>
+
+<div class="box">
+        <div class="box-header with-border">
+          <h3 class="box-title">Terrain</h3></div>
+        <div class="box-body">Especifica una imagen de un mapa de relevamiento físico que muestra terreno y vegetación.</div>
+        <div class="box-body"><center><a href="voice"><img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt=""></a></center></div>
+        <!-- /.box-body -->
+        <div class="box-footer">
+          Ver
+        </div>
+        <!-- /.box-footer-->
+</div>
+
+<div class="box">
+        <div class="box-header with-border"><h3 class="box-title">Hybrid</h3></div>
+        <div class="box-body">Especifica un híbrido de la imagen satelital y del mapa de ruta, y muestra una capa transparente de las calles principales y los nombres de los sitios que aparecen en la imagen satelital.</div>
+        <div class="box-body"><center><a href="voice"><img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt=""></a></center></div>
+        <!-- /.box-body -->
+        <div class="box-footer">
+          Ver
+        </div>
+        <!-- /.box-footer-->
+</div>
+
+
+
+
+@stop

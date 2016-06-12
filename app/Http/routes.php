@@ -26,14 +26,12 @@ Route::get('/maps', function () {
     return view('maps');
 });
 
+Route::get('/maps/roadmap', function () {
+    return view('roadmps');
+});
+
+
 Route::get('/voice','DobermanController@voice');
-
-
-
-
-
-
-
 
 
 Route::get('/cow', function () {
