@@ -27,7 +27,7 @@ Route::get('/maps', function () {
 });
 
 Route::get('/maps/roadmap', function () {
-    return view('roadmps');
+    return view('/maps/mapsevent');
 });
 
 
