@@ -21,7 +21,7 @@ Route::get('/data', function () {
    return view('data2');
 });
 
-
+/*Mapas*/
 Route::get('/maps', function () {
     return view('maps');
 });
@@ -29,6 +29,16 @@ Route::get('/maps', function () {
 Route::get('/maps/roadmap', function () {
     return view('/maps/mapsevent');
 });
+
+Route::get('/maps/marksicons', function () {
+    return view('/maps/marksicons');
+});
+
+Route::get('/maps/reczoom', function () {
+    return view('/maps/reczoom');
+});
+
+/*Mapas*/
 
 
 Route::get('/voice','DobermanController@voice');
