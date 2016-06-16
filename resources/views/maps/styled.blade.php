@@ -49,6 +49,18 @@ function initMap() {
           { visibility: 'true' },
           { color: '#27ae60' }
         ]
+      },{
+        featureType: 'landscape.natural.landcover',
+        stylers: [
+          { visibility: 'true' },
+          { color: '#34495e' }
+        ]
+      },{
+        featureType: 'poi.park',
+        stylers: [
+          { visibility: 'true' },
+          { color: '#27ae60' }
+        ]
       },
     ], {
       name: 'Custom Style'
