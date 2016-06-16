@@ -57,7 +57,7 @@ function initMap() {
 
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 12,
-    center: {lat: 40.674, lng: -73.946},  // Brooklyn.
+    center: {lat: 25.7616798, lng: -80.19179020000001},  // Miami.
     mapTypeControlOptions: {
       mapTypeIds: [google.maps.MapTypeId.ROADMAP, customMapTypeId]
     }
