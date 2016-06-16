@@ -34,14 +34,20 @@ function initMap() {
       },
       {
         featureType: 'water',
-        stylers: [{color: '#298Ob9'}]
+        stylers: [{color: '#2980b9'}]
       },
       {
         featureType: "road.arterial",
         elementType: "geometry",
         stylers: [
-          { hue: "#00ffee" },
+          { hue: "#d35400" },
           { saturation: 50 }
+        ]
+      },{
+        featureType: 'landscape.natural.terrain',
+        stylers: [
+          { visibility: 'true' },
+          { color: '#27ae60' }
         ]
       },
     ], {
