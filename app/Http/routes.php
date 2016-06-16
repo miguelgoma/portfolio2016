@@ -38,6 +38,10 @@ Route::get('/maps/reczoom', function () {
     return view('/maps/reczoom');
 });
 
+Route::get('/maps/styled', function () {
+    return view('/maps/styled');
+});
+
 /*Mapas*/
 
 
