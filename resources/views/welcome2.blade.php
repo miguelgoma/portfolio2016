@@ -251,7 +251,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="preview-pane">
-                        <a href="creative">
+                        <a href="twitter">
                         <img class="img-responsive" src="{{ asset('/img/two_screenshot-creative.png')}}" alt=""></a>
                         <h3>API Twitter </h3>
                         <p class="text-muted"><em>An example of the agency theme with a video background for the header.</em></p>

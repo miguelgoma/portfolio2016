@@ -21,6 +21,20 @@ Route::get('/data', function () {
    return view('data2');
 });
 
+Route::get('/twitter', function () {
+   try
+    {
+        $response = Twitter::getUserTimeline(['count' => 20, 'format' => 'array']);
+    }
+    catch (Exception $e)
+    {
+        dd(Twitter::logs());
+    }
+
+    dd($response);
+});
+
+
 /*Mapas*/
 Route::get('/maps', function () {
     return view('maps');
