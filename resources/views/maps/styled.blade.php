@@ -1,15 +1,9 @@
-@extends('layouts.top-nav')
+@extends('layouts.top-nav-maps')
 
-@section('content')
-    <style>
-      #map {
-        height: 100%;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="map"></div>
-    <script>
+@section('content')   
+
+@stop
+<script>
 function initMap() {
   var customMapType = new google.maps.StyledMapType([
       {
@@ -74,6 +68,3 @@ function initMap() {
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALFYAPf_3Cc1x1HjAM20LucKuJABzQXDw&signed_in=true&callback=initMap"
         async defer></script>
-  </body>
-</html>
-@stop
