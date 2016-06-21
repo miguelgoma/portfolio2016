@@ -38,7 +38,8 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-
+   
+    
     <!-- Landing Page Demo Styles -->
     <style>
     .demo-header {
@@ -82,32 +83,59 @@
         margin-top: 30px;
     }
 
+    /*tool tip*/
+    .tooltip {
+        display: inline-block;
+        border-bottom: 1px dotted black;
+        z-index: 10;
+    }
 
-/*tool tip*/
-.tooltip {
-    display: inline-block;
-    border-bottom: 1px dotted black;
-    z-index: 10;
-}
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
 
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 120px;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+    }
 
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-}
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+    /*tool tip*/
 
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-}
-/*tool tip*/
+    body {
+                background:url(img/carnation_background_pattern_1.gif);
+                margin:0px;
+                padding:0px;
+                color:#CCCCCC;
+                font-family:Verdana, Geneva, sans-serif;
+            }
+            .playground {
+                position:absolute;
+                height:400px;
+                width:500px;
+                margin:-200px 0 0 -250px;
+                border-bottom: solid 3px #222;
+                top:50%;left:50%;
+                z-index:-1;
+            }
+            #ball {
+                display:block;
+                position:absolute;
+                width:50px;
+                height:50px;
+                background:#480e6e;
+                -moz-border-radius: 50%;
+                -webkit-border-radius: 50%;
+                border-radius: 50%; 
+                z-index:-1;
+            }
     </style>
 
 </head>
@@ -163,7 +191,10 @@
             <img src="/img/two_profile.png" class="img-responsive img-centered" alt="">
             <div class="brand-name">doberMan</div>
             <hr class="colored">
-            <div class="brand-name-subtext">by @miguelgoma</div>
+            <div class="brand-name-subtext"><a href="https://twitter.com/miguelgoma">by @miguelgoma</a></div>
+            <div class="playground">
+                <span id="ball"></span>
+            </div>
         </div>
         <div class="scroll-down">
             <a class="btn page-scroll" href="#portfolio"><i class="fa fa-angle-down fa-fw"></i></a>
@@ -645,4 +676,26 @@
             wow.init();
         }
     });
+    </script>
+    <script type="text/javascript" src="../js/plugins/CSSPlugin.js"></script>
+    <script type="text/javascript" src="../js/easing/EasePack.js"></script>
+    <script type="text/javascript" src="../js/TimelineLite.js"></script>
+    <script type="text/javascript" src="../js/TweenLite.js"></script>
+    
+    <script language="javascript" type="text/javascript">
+            (function() {
+                var ball = document.getElementById('ball'),
+                    colors = ["#480e6e","#fc4239","#ffd400","#00c4df"];
+                function play() {
+                    ball.style.marginLeft = "0px";
+                    ball.style.marginTop = "350px";
+                    var tl = new TimelineLite({delay:0.5});
+                    tl.to(ball, 0.5, {css:{marginTop:0}})
+                      .to(ball, 1.25, {css:{marginTop:350}, ease:Bounce.easeOut})
+                      .to(ball, 3.5, {css:{marginLeft:"+=450px"}}, -1.75)
+                      .to(ball, 1, {css:{marginLeft:0, backgroundColor:colors[ Math.floor(Math.random() * colors.length) ]}}, 1)
+                      .call(play);
+                }
+                play();
+            })();
     </script>

@@ -24,7 +24,8 @@ Route::get('/data', function () {
 Route::get('/twitter', function () {
    try
     {
-        $response = Twitter::getUserTimeline(['count' => 20, 'format' => 'array']);
+        //$response = Twitter::getUserTimeline(['count' => 20, 'format' => 'array']);
+        $response = Twitter::getUserTimeline(['screen_name' => 'taylorotwell', 'count' => 90, 'format' => 'json']);
     }
     catch (Exception $e)
     {
