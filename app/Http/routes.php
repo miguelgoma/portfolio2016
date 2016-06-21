@@ -42,7 +42,7 @@ Route::get('/maps', function () {
 });
 
 Route::get('/maps/roadmap', function () {
-    return view('/maps/mapsevent');
+    return view('/maps/roadmap');
 });
 
 Route::get('/maps/marksicons', function () {

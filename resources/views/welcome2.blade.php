@@ -681,9 +681,11 @@
     <script type="text/javascript" src="../js/easing/EasePack.js"></script>
     <script type="text/javascript" src="../js/TimelineLite.js"></script>
     <script type="text/javascript" src="../js/TweenLite.js"></script>
-    
+    $( document ).ready(function() {
+   
+
     <script language="javascript" type="text/javascript">
-            (function() {
+             $( document ).ready(function() {
                 var ball = document.getElementById('ball'),
                     colors = ["#480e6e","#fc4239","#ffd400","#00c4df"];
                 function play() {
@@ -697,5 +699,5 @@
                       .call(play);
                 }
                 play();
-            })();
+            });
     </script>
