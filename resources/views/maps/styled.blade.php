@@ -1,6 +1,20 @@
 @extends('layouts.top-nav')
 
 @section('content')
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
     <div id="map"></div>
     <script>
 function initMap() {
