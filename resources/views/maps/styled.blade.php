@@ -1,21 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Simple styled maps</title>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-    <style>
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      #map {
-        height: 100%;
-      }
-    </style>
-  </head>
-  <body>
+@extends('layouts.top-nav')
+
+@section('content')
     <div id="map"></div>
     <script>
 function initMap() {
@@ -84,3 +69,4 @@ function initMap() {
         async defer></script>
   </body>
 </html>
+@stop
