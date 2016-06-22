@@ -1,21 +1,21 @@
 @extends('layouts.top-nav')
 
 @section('content')
-<h1>Mapas
-<small>¿De que tipo necesita?</small>
+<h1>I´m
+<small> the map</small>
 </h1>
 
 <div class="box">
         <div class="box-header with-border">
-          <h3 class="box-title"></h3>
+          <h3 class="box-title">Styled</h3>
         </div>
         <div class="box-body">
-          Predeterminado, especifica una imagen de mapa de ruta estándar, como habitualmente se muestra en el sitio web de Google Maps. Si no se especifica un valor de maptype, Google Static Maps API proporciona mosaicos de roadmap de forma predeterminada.
+          Styled maps allow you to customize the presentation of the standard Google base maps, changing the visual display of such elements as roads, parks, and built-up areas.
         </div>
         <div class="box-body"><center><a href="maps/styled"><img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt=""></a></center></div>
         <!-- /.box-body -->
         <div class="box-footer">
-          Ver
+          Show me
         </div>
         <!-- /.box-footer-->
 </div>
@@ -27,7 +27,7 @@
         <div class="box-body"><center><a href="maps/roadmap"><img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt=""></a></center></div>
         <!-- /.box-body -->
         <div class="box-footer">
-          Ver
+          Show me
         </div>
         <!-- /.box-footer-->
 </div>
@@ -39,7 +39,7 @@
         <div class="box-body"><center><a href="maps/marksicons"><img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt=""></a></center></div>
         <!-- /.box-body -->
         <div class="box-footer">
-          Ver
+          Show me
         </div>
         <!-- /.box-footer-->
 </div>
@@ -50,7 +50,7 @@
         <div class="box-body"><center><a href="maps/reczoom"><img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt=""></a></center></div>
         <!-- /.box-body -->
         <div class="box-footer">
-          Ver
+          Show me
         </div>
         <!-- /.box-footer-->
 </div>

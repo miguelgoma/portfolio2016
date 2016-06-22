@@ -1,10 +1,17 @@
 @extends('layouts.top-nav-maps')
 
-@section('content')   
-
+@section('content')
 @stop
 
-<script>
+@section('title')
+  Maps
+@stop
+
+@section('title2')
+  Styled Maps
+@stop
+
+<script language="javascript" type="text/javascript">
 function initMap() {
   var customMapType = new google.maps.StyledMapType([
       {
@@ -66,4 +73,4 @@ function initMap() {
   map.setMapTypeId(customMapTypeId);
 }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALFYAPf_3Cc1x1HjAM20LucKuJABzQXDw&signed_in=true&callback=initMap"async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALFYAPf_3Cc1x1HjAM20LucKuJABzQXDw&signed_in=true&callback=initMap" async defer></script>
