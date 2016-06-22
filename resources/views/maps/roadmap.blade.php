@@ -3,7 +3,7 @@
 @section('content')   
 
 @stop
-@section('sctpcontent')   
+
   <script>
   function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -29,4 +29,4 @@
   }
   </script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALFYAPf_3Cc1x1HjAM20LucKuJABzQXDw&signed_in=true&callback=initMap"></script>
-@stop
+
