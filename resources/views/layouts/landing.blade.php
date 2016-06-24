@@ -12,15 +12,15 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     <title>Sitios Modernos</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../../css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="{{ asset('/css/main.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/main.css">
 
     <link href="../../css/main.css'" rel="stylesheet">
-    <link href="../css/bootstrap.css.map" rel="stylesheet">
-    <link href="../css/AdminLTE.min.css" rel="stylesheet">
-    <link href="../css/skins/skin-blue.min.css" rel="stylesheet">
+    <link href="../../css/bootstrap.css.map" rel="stylesheet">    
+    <link rel="stylesheet" href="../../css/AdminLTE.min.css">
+    <link href="../../css/skins/skin-blue.min.css" rel="stylesheet">
 
 
 <!--
