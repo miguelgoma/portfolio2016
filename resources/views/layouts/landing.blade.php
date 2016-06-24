@@ -16,8 +16,8 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
 
     <!-- Custom styles for this template -->
     <link href="{{ asset('/css/main.css') }}" rel="stylesheet">
-    
-    <link href="../css/main.css'" rel="stylesheet">
+
+    <link href="../../css/main.css'" rel="stylesheet">
     <link href="../css/bootstrap.css.map" rel="stylesheet">
     <link href="../css/AdminLTE.min.css" rel="stylesheet">
     <link href="../css/skins/skin-blue.min.css" rel="stylesheet">
