@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 2 | Boxed Layout</title>
+    <title>@yield('title')</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
@@ -37,9 +37,9 @@
         <!-- Logo -->
         <a href="../../index2.html" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
-          <span class="logo-mini"><b>A</b>LT</span>
-          <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>Admin</b>LTE</span>
+          <span class="logo-mini"><b>D</b>H</span>
+          <!-- logo for regular state and mobile devices --> 
+          <span class="logo-lg"><b>Doberman</b> HerokuA</span>
         </a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
@@ -63,7 +63,8 @@
                       <li><!-- start message -->
                         <a href="#">
                           <div class="pull-left">
-                            <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                            <img src="{{ asset('/img/user7-128x128.jpg')}}" class="img-circle" alt="User Image">
+
                           </div>
                           <h4>
                             Support Team
@@ -132,15 +133,15 @@
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-                  <span class="hidden-xs">Alexander Pierce</span>
+                  <img src="{{ asset('/img/user7-128x128.jpg')}}" class="user-image" alt="User Image">
+                  <span class="hidden-xs">Elena Pierce</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->
                   <li class="user-header">
-                    <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                    <img src="{{ asset('/img/user7-128x128.jpg')}}" class="img-circle" alt="User Image">
                     <p>
-                      Alexander Pierce - Web Developer
+                      Elena Pierce - Web Developer
                       <small>Member since Nov. 2012</small>
                     </p>
                   </li>
@@ -185,10 +186,10 @@
           <!-- Sidebar user panel -->
           <div class="user-panel">
             <div class="pull-left image">
-              <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+              <img src="{{ asset('/img/user7-128x128.jpg')}}" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
-              <p>Alexander Pierce</p>
+              <p>Elena Pierce</p>
               <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
           </div>
@@ -349,13 +350,12 @@
         <!-- Content Header (Page header) -->
         <section class="content-header">
           <h1>
-            Boxed Layout
-            <small>Blank example to the boxed layout</small>
+            @yield('titledemo')
+            <small>@yield('descrdemo')</small>
           </h1>
           <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-            <li><a href="#">Layout</a></li>
-            <li class="active">Boxed</li>
+            <li><a href="https://doberman.herokuapp.com/"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active"><a href="https://doberman.herokuapp.com/stripe">stripe</a></li>
           </ol>
         </section>
 
@@ -388,7 +388,7 @@
         <div class="pull-right hidden-xs">
           <b>Version</b> 2.3.0
         </div>
-        <strong>Copyright &copy; 2014-2015 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights reserved.
+        <strong>Copyright &copy; 2016-2017 <a href="https://twitter.com/miguelgoma">@miguelgoma</a>.</strong> All rights reserved.
       </footer>
 
       <!-- Control Sidebar -->

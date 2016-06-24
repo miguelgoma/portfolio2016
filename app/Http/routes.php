@@ -21,6 +21,18 @@ Route::get('/data', function () {
    return view('data2');
 });
 
+Route::get('/stripe', function () {
+   return view('stripe');
+});
+
+Route::get('/crud', function () {
+   return view('crud');
+});
+
+Route::get('/scraping', function () {
+   return view('scraping');
+});
+
 Route::get('/twitter', function () {
    try
     {

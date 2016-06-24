@@ -28,9 +28,9 @@ class DobermanController extends Controller
         $status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
         curl_close($curl);
         $cleanjson = urldecode(stripslashes($response));
-        dd($cleanjson);
-        exit;
-        return view('voice',array('customer' => $cleanjson));
+        #dd($cleanjson);
+        #exit;
+        return view('voice', ['customer' => $cleanjson]);
     }
 
 }

@@ -163,22 +163,22 @@
                         <a class="page-scroll" href="#page-top"></a>
                     </li>
                     <li class="active">
-                        <a class="page-scroll" href="#portfolio">Portafolio</a>
+                        <a class="page-scroll" href="#portfolio">Portfolio</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Acerca de</a>
+                        <a class="page-scroll" href="#about">About</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#process">Proceso</a>
+                        <a class="page-scroll" href="#process">Process</a>
                     </li>
                     <li class="">
-                        <a class="page-scroll" href="#work">Trabajo</a>
+                        <a class="page-scroll" href="#work">Work</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#pricing">Habilidades</a>
+                        <a class="page-scroll" href="#pricing">Habilities</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contacto</a>
+                        <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -203,13 +203,13 @@
 
     <section id="portfolio">
         <div class="preview-pane">
-            <h1>Portafolio web</h1>
+            <h1>Portfolio web</h1>
         </div>
         <div class="container" id="previews">
             <div class="row wow fadeIn" >
                 <div class="col-md-4">
                     <div class="preview-pane">
-                        <a href="fashion"><img class="img-responsive" src="{{ asset('/img/two_screenshot-fashion.png')}}" alt=""></a>
+                        <a href="crud"><img class="img-responsive" src="{{ asset('/img/two_screenshot-fashion.png')}}" alt=""></a>
                             <h3>CRUD AJAX APLICATION</h3>
                             <p class="text-muted">
                                 <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
@@ -219,8 +219,8 @@
                 </div>
                 <div class="col-md-4">
                     <div class="preview-pane">
-                        <a href="legal"><img class="img-responsive" src="{{ asset('/img/two_screenshot-legal.png')}}" alt=""></a>
-                            <h3>Cotizador de autos</h3>
+                        <a href="scraping"><img class="img-responsive" src="{{ asset('/img/two_screenshot-legal.png')}}" alt=""></a>
+                            <h3>Web scraping</h3>
                             <p class="text-muted">
                                 <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
                             </p>
@@ -229,7 +229,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="preview-pane">
-                        <a href="video"><img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
+                        <a href="stripe"><img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
                             <h3>ECOMMERCE WITH STRIPE</h3>
                             <p class="text-muted">
                                 <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
@@ -241,8 +241,8 @@
             <div class="row content-row wow fadeIn">
             <div class="col-md-4">
                     <div class="preview-pane">
-                        <a href="agency"><img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
-                            <h3>NEWSLETTERS</h3>
+                        <a href="twitter"><img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
+                            <h3>API Twitter</h3>
                         <p class="text-muted">
                                 <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
                             </p>
@@ -251,8 +251,8 @@
                 </div>
                 <div class="col-md-4">
                     <div class="preview-pane">
-                        <a href="data"><img class="img-responsive" src="{{ asset('/img/two_screenshot-creative.png')}}" alt=""></a>
-                            <h3>MANIPULACION DE DATOS</h3>
+                        <a href="voice"><img class="img-responsive" src="{{ asset('/img/two_screenshot-creative.png')}}" alt=""></a>
+                            <h3>VOICE BUNNY</h3>
                         <p class="text-muted">
                                 <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
                             </p>
@@ -282,27 +282,27 @@
                 </div>
                 <div class="col-md-3">
                     <div class="preview-pane">
-                        <a href="twitter">
+                        <a href="newsletters">
                         <img class="img-responsive" src="{{ asset('/img/two_screenshot-creative.png')}}" alt=""></a>
-                        <h3>API Twitter </h3>
+                        <h3>NEWSLETTERS</h3>
                         <p class="text-muted"><em>An example of the agency theme with a video background for the header.</em></p>
                         <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop" aria-hidden="true"></i>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="preview-pane">
-                        <a href="culinary">
+                        <a href="quote">
                         <img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt=""></a>
-                        <h3>VOICE BUNNY </h3>
+                        <h3>Cotizador de autos</h3>
                         <p class="text-muted"><em>An example of the agency theme with a video background for the header.</em></p>
                         <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop" aria-hidden="true"></i>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="preview-pane">
-                        <a href="voice">
+                        <a href="data">
                         <img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt=""></a>
-                        <h3>VOICE BUNNY</h3>
+                        <h3>MANIPULACION DE DATOS</h3>
                         <p class="text-muted"><em>An example of the agency theme with a video background for the header.</em></p>
                         <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop" aria-hidden="true"></i>
                     </div>

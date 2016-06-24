@@ -1,9 +1,10 @@
 @extends('layouts.top-nav')
 
 @section('content')
-    <h1>My page Customer</h1>
+{{ $customer }}
+    <h1>Voice Bunny api</h1>
         <ul>
-            <li>dd($customer)</li>
+            <li></li>
         </ul>
 
     <div class="row">
