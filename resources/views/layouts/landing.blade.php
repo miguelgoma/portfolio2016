@@ -9,7 +9,7 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     <meta name="description" content="Pratt - Free Bootstrap 3 Theme">
     <meta name="author" content="Alvarez.is - BlackTie.co">
 
-    <title>Sitios Modernos</title>
+    <title>Doberman Heroku app</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../../css/bootstrap.css" rel="stylesheet">
@@ -21,7 +21,6 @@ Landing page based on Pratt: http://blacktie.co/demo/pratt/
     <link href="../../css/bootstrap.css.map" rel="stylesheet">    
     <link rel="stylesheet" href="../../css/AdminLTE.min.css">
     <link href="../../css/skins/skin-blue.min.css" rel="stylesheet">
-
 
 <!--
     <link href="../css/bootstrap.css" rel="stylesheet">
