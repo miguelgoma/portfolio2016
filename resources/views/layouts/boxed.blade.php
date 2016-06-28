@@ -554,11 +554,10 @@
       <div class="control-sidebar-bg"></div>
     </div><!-- ./wrapper -->
 
-    
     <!-- jQuery 2.1.4 -->
-    <script src="{{ asset('plugins/jQuery/jQuery-2.1.4.min.js') }}"></script>
+    <script src="../js/principal/jquery.js"></script>
     <!-- Bootstrap 3.3.5 -->
-    <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="../js/principal/bootstrap.min.js"></script>
     <!-- SlimScroll -->
     <script src="{{ asset('plugins/plugins/slimScroll/jquery.slimscroll.min.js') }}"></script>
     <!-- FastClick -->
