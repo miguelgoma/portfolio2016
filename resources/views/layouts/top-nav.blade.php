@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <title>@yield('title')</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
@@ -17,7 +18,7 @@
     <link rel="stylesheet" href="../../css/AdminLTE.min.css">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
-    <link rel="stylesheet" href="../../css/skins/skin-purple.min.css">
+    <link rel="stylesheet" href="../../css/skins/_all-skins.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,7 +29,7 @@
   </head>
 
   <!-- ADD THE CLASS layout-top-nav TO REMOVE THE SIDEBAR. -->
-  <body class="hold-transition skin-purple layout-top-nav">
+  <body class="hold-transition skin-blue layout-top-nav">
     <div class="wrapper">
 
       <header class="main-header">
@@ -186,8 +187,7 @@
           <!-- Content Header (Page header) -->
           <section class="content-header">
             <h1>
-              @yield('title')
-              <small>@yield('title2')</small>
+              @yield('title2')
             </h1>
             <ol class="breadcrumb">
               <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -197,6 +197,7 @@
           </section>
 
           <!-- Main content -->
+          
           @yield('content')
 
         </div>
@@ -227,4 +228,5 @@
     <!-- AdminLTE for demo purposes -->
     <script src="{{ asset('js/demo.js') }}"></script>
   </body>
+  @yield('includejs')
 </html>
