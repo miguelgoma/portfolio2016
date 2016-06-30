@@ -215,13 +215,17 @@
     </div>
 
     <!-- jQuery 2.1.4 -->
-    <script src="../js/jquery-1.9.1.min.js"></script>
+    <script src="{{ asset('plugins/jQuery/jQuery-2.1.4.min.js') }}"></script>
     <!-- Bootstrap 3.3.5 -->
-        <!-- AdminLTE App -->
+    <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
+    <!-- SlimScroll -->
+    <script src="{{ asset('plugins/plugins/slimScroll/jquery.slimscroll.min.js') }}"></script>
+    <!-- FastClick -->
+    <script src="{{ asset('plugins/fastclick/fastclick.min.js') }}"></script>
+    <!-- AdminLTE App -->
     <script src="{{ asset('js/app.min.js') }}"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="{{ asset('js/demo.js') }}"></script>
-
     @yield('includejs')
   </body>
 </html>
