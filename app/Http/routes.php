@@ -71,8 +71,11 @@ Route::get('/maps/styled', function () {
 
 /*Mapas*/
 
-
-Route::get('/voice','DobermanController@voice');
+//Route::get('/voice','DobermanController@voice');
+Route::resource('/voice','VoiceController');
+Route::get('/languages','VoiceController@languages');
+Route::get('/genderAndAge','VoiceController@genderAndAge');
+Route::get('/purpose','VoiceController@purpose');
 
 
 Route::get('/cow', function () {
