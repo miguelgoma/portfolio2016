@@ -76,6 +76,8 @@ Route::resource('/voice','VoiceController');
 Route::get('/languages','VoiceController@languages');
 Route::get('/genderAndAge','VoiceController@genderAndAge');
 Route::get('/purpose','VoiceController@purpose');
+Route::get('/purpose','VoiceController@purpose');
+Route::get('/voicesearch','VoiceController@voicesearch');
 
 
 Route::get('/cow', function () {

@@ -13,6 +13,37 @@ class VoiceController extends Controller
         return view('voice.muestra');
     }
 
+    public function voicesearch()
+    {
+        $voicebunnyUser = '47111';
+		$voicebunnyToken = '38f617e9f9caadbf4c30f1521534567f';
+		$url_api = 'https://api.voicebunny.com/samples/search';
+		$postVars = array(
+			'language'=> 'spa-mx', 
+		        'genderAndAge'=> 'youngAdultAnyGender', 
+		        'purpose'=> 'movieTrailers', 
+		        'itemsPerPage'=> '30', 
+		        'page'=> '2',
+		);
+		$vars = http_build_query($postVars);
+		$opts = array(
+			CURLOPT_URL => $url_api,
+			CURLOPT_RETURNTRANSFER => TRUE,
+			CURLOPT_INFILESIZE => -1,
+			CURLOPT_TIMEOUT => 60,
+			CURLOPT_SSL_VERIFYPEER => false,
+			CURLOPT_POST => TRUE,
+			CURLOPT_POSTFIELDS => $vars,
+			CURLOPT_USERPWD => $voicebunnyUser . ':' . $voicebunnyToken,
+		);
+		$curl = curl_init();
+		curl_setopt_array($curl, $opts);
+		$response = curl_exec($curl);
+		$status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+		curl_close($curl);
+		print_r($response);
+    }
+
     public function purpose()
     {
     	$url_api = 'https://api.voicebunny.com/purposes';

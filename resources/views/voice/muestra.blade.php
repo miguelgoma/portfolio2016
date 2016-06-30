@@ -37,7 +37,7 @@
                     </div>
                   </div>
                   <div class="box-footer">
-                    <button type="submit" class="btn btn-primary">Buscar</button>
+                    <button type="submit" class="btn btn-primary" id="register">Buscar</button>
                   </div>
                 {!! Form::close() !!}
             </div>
@@ -45,43 +45,11 @@
         <!-- right column -->
         <div class="col-md-8">
             <!-- Horizontal Form -->
-            <div class="box box-info">
+            <div class="box box-info" id="broad">
                 <div class="box-header with-border">
                   <h3 class="box-title">Horizontal Form</h3>
                 </div>
-                <!-- form start -->
-                <form class="form-horizontal">
-                  <div class="box-body">
-                    <div class="form-group">
-                      <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-
-                      <div class="col-sm-10">
-                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-
-                      <div class="col-sm-10">
-                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="col-sm-offset-2 col-sm-10">
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Remember me
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- /.box-body -->
-                  <div class="box-footer">
-                    <button type="submit" class="btn btn-default">Cancel</button>
-                    <button type="submit" class="btn btn-info pull-right">Sign in</button>
-                  </div>
-                </form>
+                
               </div>
             </div>
         </div>
@@ -125,11 +93,11 @@
   document.getElementById('selectProper').innerHTML=Propoutput;
   });
 
-  $('#register').on('submit', function(e) {           // When form is submitted
+  $('#register').on('click', function(e) { 
     e.preventDefault();                               // Prevent it being sent
     var details = $('#register').serialize();         // Serialize form data
     console.log(details);
-    $.getJSON('../voiceb/voicebws/voiceb.php', details, function(caster) {  // Use $.post() to send it
+    $.getJSON('https://doberman.herokuapp.com/voicesearch', details, function(caster) {  // Use $.post() to send it
       //$('#register').html(broadcaster);
       var tablefill='';
       tablefill += '<thead>';
