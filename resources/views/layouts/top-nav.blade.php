@@ -7,7 +7,7 @@
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.5 -->
-    <link rel="stylesheet" href="{{ asset('../css/bootstrap.min.css') }}">
+    <!--<link rel="stylesheet" href="{{ asset('../css/bootstrap.min.css') }}">-->
     <link href="../css/principal/bootstrap.min.css" rel="stylesheet" type="text/css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -217,9 +217,8 @@
     <!-- jQuery 2.1.4 -->
     <script src="../js/jquery-1.9.1.min.js"></script>
     <!-- Bootstrap 3.3.5 -->
-        <!-- AdminLTE App -->
-    <script src="{{ asset('js/app.min.js') }}"></script>
-    <script src="{{ asset('js/app.min.js') }}"></script>
+        <!-- AdminLTE App -->    
+    <script src="../js/app.min.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="{{ asset('js/demo.js') }}"></script>
     @yield('includejs')
