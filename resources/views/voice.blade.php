@@ -1,7 +1,6 @@
 @extends('layouts.top-nav')
 
 @section('content')
-{{ $customer }}
     <h1>Voice Bunny api</h1>
         <ul>
             <li></li>
@@ -88,4 +87,6 @@
             </div>
         </div>
     </div>
+@stop
+@section('includejs')
 @stop
