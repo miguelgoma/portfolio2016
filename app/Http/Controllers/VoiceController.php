@@ -15,8 +15,8 @@ class VoiceController extends Controller
 
     public function voicesearch()
     {
-        $voicebunnyUser = '47111';
-		$voicebunnyToken = '38f617e9f9caadbf4c30f1521534567f';
+        $voicebunnyUser = '77136';
+		$voicebunnyToken = '39db4ef1d409af788ded3fd4aa3511f1';
 		$url_api = 'https://api.voicebunny.com/samples/search';
 		$postVars = array(
 			'language'=> 'spa-mx', 

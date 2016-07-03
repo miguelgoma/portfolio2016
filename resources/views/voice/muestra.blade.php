@@ -70,7 +70,7 @@
   document.getElementById('selectLanguage').innerHTML=output;
   });
   $.getJSON( "https://doberman.herokuapp.com/genderAndAge",function( gage ) {
-    console.log(gage);
+    //console.log(gage);
   var Ageoutput='';
   Ageoutput  += '<option>';
   Ageoutput  += '</option>';
@@ -96,7 +96,7 @@
   $('#register').on('click', function(e) { 
     e.preventDefault();                               // Prevent it being sent
     var details = $('#register').serialize();         // Serialize form data
-    console.log(details);
+    //console.log(details);
     $.getJSON('https://doberman.herokuapp.com/voicesearch', details, function(caster) {  // Use $.post() to send it
       //$('#register').html(broadcaster);
       var tablefill='';
