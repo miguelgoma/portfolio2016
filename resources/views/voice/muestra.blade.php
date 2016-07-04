@@ -56,9 +56,10 @@
     </div>
 @stop
 
+
 @section('includejs')
 <script language="javascript" type="text/javascript">
-  $.getJSON( "https://doberman.herokuapp.com/languages",function( data ) {
+  $.getJSON( "http://localhost:8000/languages",function( data ) {
   var output='';
   output  += '<option>';
   output  += '</option>';
@@ -69,7 +70,7 @@
     });
   document.getElementById('selectLanguage').innerHTML=output;
   });
-  $.getJSON( "https://doberman.herokuapp.com/genderAndAge",function( gage ) {
+  $.getJSON( "http://localhost:8000/genderAndAge",function( gage ) {
     //console.log(gage);
   var Ageoutput='';
   Ageoutput  += '<option>';
@@ -81,7 +82,7 @@
     });
   document.getElementById('selectAge').innerHTML=Ageoutput;
   });
-  $.getJSON( "https://doberman.herokuapp.com/purpose",function( pur ) {
+  $.getJSON( "http://localhost:8000/purpose",function( pur ) {
   var Propoutput='';
   Propoutput  += '<option>';
   Propoutput  += '</option>';
@@ -97,39 +98,63 @@
     e.preventDefault();                               // Prevent it being sent
     var details = $('#register').serialize();         // Serialize form data
     //console.log(details);
-    $.getJSON('https://doberman.herokuapp.com/voicesearch', details, function(caster) {  // Use $.post() to send it
+    $.getJSON('http://localhost:8000/voicesearch', details, function(caster) {  // Use $.post() to send it
       //$('#register').html(broadcaster);
       var tablefill='';
-      tablefill += '<thead>';
-      tablefill += '<tr>';
-      tablefill += '<th>#</th>';
-      tablefill += '<th>Escuchar al lotutor</th>';
-      tablefill += '<th>Idioma</th>';
-      tablefill += '<th>Precio más bajo</th>';
-      tablefill += '</tr>';
-      tablefill += '</thead>';
-      tablefill += '<tbody>';
+      //tablefill += '<thead>';
+      //tablefill += '<tr>';
+      //tablefill += '<th>#</th>';
+      //tablefill += '<th>Escuchar al lotutor</th>';
+      //tablefill += '<th>Idioma</th>';
+      //tablefill += '<th>Precio más bajo</th>';
+      //tablefill += '</tr>';
+      //tablefill += '</thead>';
+      //tablefill += '<tbody>';
+
+      tablefill+='<div class="box box-info">';
+            tablefill+='<div class="box-header with-border">';
+              tablefill+='<div class="box-tools pull-right">';
+                tablefill+='<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>';
+                tablefill+='</button>';
+                tablefill+='<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>';
+              tablefill+='</div>';
+            tablefill+='</div>';
 
       var count=1;
       uris = [];
       $.each(caster.samples, function(key, val) {
           var url = caster.samples[key].url;
           var language = caster.samples[key].language;
+          var talentID = caster.samples[key].talentID;
           var lowestListProjectPrice = caster.samples[key].lowestListProjectPrice;
-          var currency = caster.samples[key].currency;
-      tablefill += '<tr">';
-      tablefill += '<td>'+count+'</td>';
-      //var b='<button type="button" class="btn btn-sm btn-info" data-toggle="modal" data-target=".bs-example-modal-sm">About</button>';
-      //var a='<a href="#" class="listenBroadcaster" onclick="listenBroadcaster('+count+')">Escuchar</a>';
-      tablefill += '<td>'+'<video width="280px" height="25" controls><source src="' + url + '" type="video/mp4" /></video>'+'</td>';
-        tablefill += '<td>'+language+'</td>';
-          tablefill += '<td>'+currency+' '+lowestListProjectPrice+'</td>';
-            tablefill += '</tr>';
-            count++;
+          var currency = caster.samples[key].currency;          
+            tablefill+='<div class="box-body">';
+              tablefill+='<div class="table-responsive">';
+                tablefill+='<table class="table no-margin">';
+                  tablefill+='<thead>';
+                  tablefill+='<tr>';
+                    tablefill+='<th>Order ID</th>';
+                    tablefill+='<th>Item</th>';
+                  tablefill+='</tr>';
+                  tablefill+='</thead>';
+                  tablefill+='<tbody>';
+                  tablefill+='<tr>';
+                    tablefill+='<td><h3 class="box-title">Talent ID '+ talentID +'</h3></td>';
+                    tablefill+='<td><video width="280px" height="35" controls><source src="' + url + '" type="video/mp4" /></video></td>';
+                  tablefill+='</tr>';
+                  tablefill+='</tbody>';
+                tablefill+='</table>';
+              tablefill+='</div>';
+            tablefill+='</div>';
+            tablefill+='<div class="box-footer clearfix">';
+            tablefill+='</div>';
+          tablefill+='</div>';
+          count++;
       });
     document.getElementById('broad').innerHTML=tablefill;
     });
   });
 </script>
 @stop
+
 

@@ -19,11 +19,11 @@ class VoiceController extends Controller
 		$voicebunnyToken = '39db4ef1d409af788ded3fd4aa3511f1';
 		$url_api = 'https://api.voicebunny.com/samples/search';
 		$postVars = array(
-			'language'=> 'spa-mx', 
-		        'genderAndAge'=> 'youngAdultAnyGender', 
-		        'purpose'=> 'movieTrailers', 
-		        'itemsPerPage'=> '30', 
-		        'page'=> '2',
+			'language'=> 'eng-us', 
+            'genderAndAge'=> 'youngAdultMale', 
+            'purpose'=> 'liveAnnouncements', 
+            'itemsPerPage'=> '30', 
+            'page'=> '2',
 		);
 		$vars = http_build_query($postVars);
 		$opts = array(
@@ -41,7 +41,8 @@ class VoiceController extends Controller
 		$response = curl_exec($curl);
 		$status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
 		curl_close($curl);
-		print_r($response);
+		//var_dump($response);
+		return $response;
     }
 
     public function purpose()
