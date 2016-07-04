@@ -59,7 +59,7 @@
 
 @section('includejs')
 <script language="javascript" type="text/javascript">
-  $.getJSON( "http://localhost:8000/languages",function( data ) {
+  $.getJSON( "https://doberman.herokuapp.com/languages",function( data ) {
   var output='';
   output  += '<option>';
   output  += '</option>';
@@ -70,7 +70,7 @@
     });
   document.getElementById('selectLanguage').innerHTML=output;
   });
-  $.getJSON( "http://localhost:8000/genderAndAge",function( gage ) {
+  $.getJSON( "https://doberman.herokuapp.com/genderAndAge",function( gage ) {
     //console.log(gage);
   var Ageoutput='';
   Ageoutput  += '<option>';
@@ -82,7 +82,7 @@
     });
   document.getElementById('selectAge').innerHTML=Ageoutput;
   });
-  $.getJSON( "http://localhost:8000/purpose",function( pur ) {
+  $.getJSON( "https://doberman.herokuapp.com/purpose",function( pur ) {
   var Propoutput='';
   Propoutput  += '<option>';
   Propoutput  += '</option>';
@@ -98,7 +98,7 @@
     e.preventDefault();                               // Prevent it being sent
     var details = $('#register').serialize();         // Serialize form data
     //console.log(details);
-    $.getJSON('http://localhost:8000/voicesearch', details, function(caster) {  // Use $.post() to send it
+    $.getJSON('https://doberman.herokuapp.com/voicesearch', details, function(caster) {  // Use $.post() to send it
       //$('#register').html(broadcaster);
       var tablefill='';
       //tablefill += '<thead>';
