@@ -38,13 +38,16 @@ Route::get('/twitter', function () {
     {
         //$response = Twitter::getUserTimeline(['count' => 20, 'format' => 'array']);
         $response = Twitter::getUserTimeline(['screen_name' => 'taylorotwell', 'count' => 90, 'format' => 'json']);
+        $El_Universal_Mx = Twitter::getUserTimeline(['screen_name' => 'El_Universal_Mx', 'count' => 90, 'format' => 'json']);
+        $VILLALVAZO13 = Twitter::getUserTimeline(['screen_name' => 'VILLALVAZO13', 'count' => 90, 'format' => 'json']);
     }
     catch (Exception $e)
     {
         dd(Twitter::logs());
     }
 
-    dd($response);
+    return view('twitter', ['response' => $response,'VILLALVAZO13' => $VILLALVAZO13,'El_Universal_Mx' => $El_Universal_Mx]);
+    
 });
 
 
