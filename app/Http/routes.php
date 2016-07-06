@@ -37,16 +37,18 @@ Route::get('/twitter', function () {
    try
     {
         //$response = Twitter::getUserTimeline(['count' => 20, 'format' => 'array']);
-        $response = Twitter::getUserTimeline(['screen_name' => 'taylorotwell', 'count' => 90, 'format' => 'json']);
-        $El_Universal_Mx = Twitter::getUserTimeline(['screen_name' => 'El_Universal_Mx', 'count' => 90, 'format' => 'json']);
-        $VILLALVAZO13 = Twitter::getUserTimeline(['screen_name' => 'VILLALVAZO13', 'count' => 90, 'format' => 'json']);
+        $barackobama = Twitter::getUserTimeline(['screen_name' => 'barackobama', 'count' => 20, 'format' => 'json']);
+        $El_Universal_Mx = Twitter::getUserTimeline(['screen_name' => 'El_Universal_Mx', 'count' => 20, 'format' => 'json']);
+        $VILLALVAZO13 = Twitter::getUserTimeline(['screen_name' => 'VILLALVAZO13', 'count' => 20, 'format' => 'json']);
+        $trend = Twitter::getTrendsPlace(['id' => '116545']);
+        $trend = json_encode($trend);
     }
     catch (Exception $e)
     {
         dd(Twitter::logs());
     }
 
-    return view('twitter', ['response' => $response,'VILLALVAZO13' => $VILLALVAZO13,'El_Universal_Mx' => $El_Universal_Mx]);
+    return view('twitter', ['barackobama' => $barackobama,'VILLALVAZO13' => $VILLALVAZO13,'El_Universal_Mx' => $El_Universal_Mx,'trend' => $trend]);
     
 });
 
