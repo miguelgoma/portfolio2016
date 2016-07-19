@@ -654,35 +654,10 @@
     <script src="../js/jquery-1.9.1.min.js"></script>
     <script src="../js/jquery.lettering-0.6.1.min.js"></script>
     <script src="../js/jquery.scrollorama.js"></script>
-
-    <script type="text/javascript">
-    /*!
-     * Vitality v1.3.5 (http://themes.startbootstrap.com/vitality-v1.3.5)
-     * Copyright 2013-2015 Start Bootstrap Themes
-     * To use this theme you must have a license purchased at WrapBootstrap (https://wrapbootstrap.com)
-     */
-
-    // Load WOW.js on non-touch devices
-    var isPhoneDevice = "ontouchstart" in document.documentElement;
-    $(document).ready(function() {
-        if (isPhoneDevice) {
-            //mobile
-        } else {
-            //desktop               
-            // Initialize WOW.js
-            wow = new WOW({
-                offset: 50
-            })
-            wow.init();
-        }
-    });
-    </script>
     <script type="text/javascript" src="../js/plugins/CSSPlugin.js"></script>
     <script type="text/javascript" src="../js/easing/EasePack.js"></script>
     <script type="text/javascript" src="../js/TimelineLite.js"></script>
     <script type="text/javascript" src="../js/TweenLite.js"></script>
-    $( document ).ready(function() {
-   
 
     <script language="javascript" type="text/javascript">
              $( document ).ready(function() {

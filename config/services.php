@@ -15,8 +15,8 @@ return [
     */
 
     'mailgun' => [
-        'domain' => env('MAILGUN_DOMAIN'),
-        'secret' => env('MAILGUN_SECRET'),
+        'domain' => env('doberman.herokuapp.com'),
+        'secret' => env('key-2bcf6a5cafd5a75b4064a4d14e84aabd'),
     ],
 
     'ses' => [

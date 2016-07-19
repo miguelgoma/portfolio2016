@@ -12,7 +12,8 @@
         "thujohn/pdf": "^1.0",
         "barryvdh/laravel-dompdf": "^0.6.1",
         "thujohn/twitter": "^2.2",
-        "laravelcollective/html": "5.2.*"
+        "laravelcollective/html": "5.2.*",
+        "laravel/socialite": "^2.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

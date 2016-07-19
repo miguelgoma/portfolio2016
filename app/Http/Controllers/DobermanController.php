@@ -33,4 +33,15 @@ class DobermanController extends Controller
         return view('voice', ['customer' => $cleanjson]);
     }
 
+    public function mail(){
+
+        $user = User::find(1)->toArray();
+        Mail::send('emails.mailEvent', $user, function($message) use ($user) {
+            $message->to($user->email);
+            $message->subject('Mailgun Testing');
+        });
+        dd('Mail Send Successfully');
+        
+    }
+
 }
