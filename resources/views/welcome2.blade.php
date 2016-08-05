@@ -261,7 +261,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="preview-pane">
-                        <a href="maps"><img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt=""></a>
+                        <a href="maps"><img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
                             <h3>GOOGLE MAPS</h3>
                         <p class="text-muted">
                                 <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
@@ -292,7 +292,7 @@
                 <div class="col-md-3">
                     <div class="preview-pane">
                         <a href="quote">
-                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt=""></a>
+                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
                         <h3>Cotizador de autos</h3>
                         <p class="text-muted"><em>An example of the agency theme with a video background for the header.</em></p>
                         <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop" aria-hidden="true"></i>
@@ -301,7 +301,7 @@
                 <div class="col-md-3">
                     <div class="preview-pane">
                         <a href="data">
-                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt=""></a>
+                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
                         <h3>MANIPULACION DE DATOS</h3>
                         <p class="text-muted"><em>An example of the agency theme with a video background for the header.</em></p>
                         <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop" aria-hidden="true"></i>
