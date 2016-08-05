@@ -188,7 +188,7 @@
     </nav>
     <header style="background-image: url('/img/two_bg-header.jpg');">
         <div class="intro-content">
-            <img src="/img/doberman.jpg" class="img-responsive img-centered" alt="">
+            <img src="/img/doberman.png" class="img-responsive img-centered" alt="">
             <div class="brand-name">doberMan</div>
             <hr class="colored">
             <div class="brand-name-subtext"><a href="https://twitter.com/miguelgoma">by @miguelgoma</a></div>

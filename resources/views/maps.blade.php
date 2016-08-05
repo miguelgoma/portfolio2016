@@ -45,7 +45,7 @@
               <h4><i class="icon fa fa-check"></i> Styled!</h4>
                 <p>Styled maps allow you to customize the presentation of the standard Google maps.</p>
               </div>
-              <div class="box-body"><center><a href="maps/styled"><img class="img-responsive" src="{{ asset('/img/two_screenshot-culinary.png')}}" alt=""></a></center></div>
+              <div class="box-body"><center><a href="maps/styled"><img class="img-responsive" src="{{ asset('/img/miami.jpg')}}" alt=""></a></center></div>
               <!-- /.box-body -->
               <div class="box-footer">
                 Show me
@@ -111,4 +111,3 @@
         </div>
         <!-- /.col -->
       </div>
-@stop
