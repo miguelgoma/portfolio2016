@@ -6,10 +6,13 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
+use Goutte\Client;
+
 class DobermanController extends Controller
 {
     
-    public function  voice(){
+    public function  voice()
+    {
         //$customer = \App\Customer::find(1);
         //return view('datos',array('customer' => $customer));
 
@@ -33,7 +36,8 @@ class DobermanController extends Controller
         return view('voice', ['customer' => $cleanjson]);
     }
 
-    public function mail(){
+    public function mail()
+    {
 
         $user = User::find(1)->toArray();
         Mail::send('emails.mailEvent', $user, function($message) use ($user) {
@@ -42,6 +46,19 @@ class DobermanController extends Controller
         });
         dd('Mail Send Successfully');
         
+    }
+
+    public function scrap()
+    {
+        $client = new Client();
+        $crawler = $client->request('GET', 'http://ebookee.org/tutorial.html');
+        $crawler->filter('ol > li > a')->each(function ($node) {
+            if ( preg_match("/PHP|Laravel|Ruby|RUBY|Lynda|Infiniteskills|Code|TutsPlus|English|Commerce|School|Learn|Apache|Cordova|SVN|Git/",$node->text()) ) {
+                print $node->text()."<br/>";
+            }
+        });
+        exit;
+
     }
 
 }
