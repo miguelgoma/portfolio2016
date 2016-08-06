@@ -576,5 +576,6 @@
     <script src="{{ asset('plugins/fastclick/fastclick.min.js') }}"></script>
     <!-- AdminLTE App -->
     <script src="../js/app.min.js"></script>
+    @yield('includejs')
   </body>
 </html>

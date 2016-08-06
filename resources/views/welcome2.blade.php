@@ -209,8 +209,8 @@
             <div class="row wow fadeIn" >
                 <div class="col-md-4">
                     <div class="preview-pane">
-                        <a href="crud"><img class="img-responsive" src="{{ asset('/img/two_screenshot-fashion.png')}}" alt=""></a>
-                            <h3>CRUD AJAX APLICATION</h3>
+                        <a href="exampleajax"><img class="img-responsive" src="{{ asset('/img/two_screenshot-fashion.png')}}" alt=""></a>
+                            <h3>AJAX APLICATION</h3>
                             <p class="text-muted">
                                 <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
                             </p>

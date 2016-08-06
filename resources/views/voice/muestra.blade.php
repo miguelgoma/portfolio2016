@@ -99,18 +99,7 @@
     var details = $('#register').serialize();         // Serialize form data
     //console.log(details);
     $.getJSON('https://doberman.herokuapp.com/voicesearch', details, function(caster) {  // Use $.post() to send it
-      //$('#register').html(broadcaster);
       var tablefill='';
-      //tablefill += '<thead>';
-      //tablefill += '<tr>';
-      //tablefill += '<th>#</th>';
-      //tablefill += '<th>Escuchar al lotutor</th>';
-      //tablefill += '<th>Idioma</th>';
-      //tablefill += '<th>Precio más bajo</th>';
-      //tablefill += '</tr>';
-      //tablefill += '</thead>';
-      //tablefill += '<tbody>';
-
       tablefill+='<div class="box box-info">';
             tablefill+='<div class="box-header with-border">';
               tablefill+='<div class="box-tools pull-right">';
@@ -119,7 +108,6 @@
                 tablefill+='<button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>';
               tablefill+='</div>';
             tablefill+='</div>';
-
       var count=1;
       uris = [];
       $.each(caster.samples, function(key, val) {

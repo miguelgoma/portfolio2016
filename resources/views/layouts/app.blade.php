@@ -56,6 +56,7 @@ desired effect
 
 @section('scripts')
     @include('layouts.partials.scripts')
+    @yield('includejs')
 @show
 
 </body>

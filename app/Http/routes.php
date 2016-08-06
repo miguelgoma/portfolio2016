@@ -25,10 +25,6 @@ Route::get('/stripe', function () {
    return view('stripe');
 });
 
-Route::get('/crud', function () {
-   return view('crud');
-});
-
 Route::get('/scraping', function () {
    return view('scraping');
 });
@@ -107,6 +103,17 @@ Route::get('/test', function()
 
 Route::get('mail', 'DobermanController@mail');
 Route::get('scraping', 'DobermanController@scrap');
+
+
+/*
+REST Countries
+Get information about countries via a RESTful API
+*/
+
+Route::resource('/exampleajax', 'RestCountries');
+Route::get('/countries','RestCountries@countries');
+
+/**/
 
 Route::get('/pdf', function()
 {
