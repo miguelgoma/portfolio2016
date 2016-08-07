@@ -31,7 +31,8 @@
                 <form role="form">
                   <div class="box-body">
                     <div class="form-group">
-                    <label>Countries</label><i class="fa fa-flag"></i>
+                    <i class="fa fa-flag"></i>
+                    <label>Countries</label>
                       <select class="form-control" id="selectCountries">
                         <option></option>
                       </select>
@@ -47,6 +48,7 @@
     <div class="col-md-8">
           <div class="box" id="broad">
             <div class="box-header">
+            <i class="fa fa-gears"></i>
               <h3 class="box-title">Results</h3>
             </div>
             <!-- /.box-header -->
