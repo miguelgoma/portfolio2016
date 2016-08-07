@@ -69,7 +69,7 @@
 
 @section('includejs')
 <script language="javascript" type="text/javascript">
-  $.getJSON( "http://localhost:8000/countries",function( data ) {
+  $.getJSON( "https://doberman.herokuapp.com/countries",function( data ) {
   var output='';
   output  += '<option>';
   output  += '</option>';
