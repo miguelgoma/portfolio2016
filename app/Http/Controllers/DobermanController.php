@@ -63,7 +63,7 @@ class DobermanController extends Controller
                     $client = new Client();
                     $cw = $client->request('GET', $uri);
                     $cw->filter('ol > li > a')->each(function ($node) {
-                        if ( preg_match('/PHP|Laravel|Ruby|RUBY|Lynda|Infiniteskills|Code|TutsPlus|English|Commerce|School|Learn|Apache|Cordova|SVN|Git|WordPress|Commerce|Linux|SecureNinja|Facebook|MySQL|CodeSchool|Reilly|SkillShare|Modern|Coursera|Deploying|Services|Marketing|Android|JavaScript|Laracasts|Angular|NodeJS|SQL|YouTube|PostgreSQL|Rails|Testing|CSS3|Google|Business/',$node->text()) ) {
+                        if ( preg_match('/PHP|Laravel|Ruby|RUBY|Lynda|Infiniteskills|Code|TutsPlus|English|Commerce|School|Learn|Apache|Cordova|SVN|Git|WordPress|Commerce|Linux|SecureNinja|Facebook|MySQL|CodeSchool|Reilly|SkillShare|Modern|Coursera|Deploying|Services|Marketing|Android|JavaScript|Laracasts|Angular|NodeJS|SQL|YouTube|PostgreSQL|Rails|Testing|CSS3|Google|Business|Course|Html/',$node->text()) ) {
                             print $node->text()."<br/>";
                         }
                     });

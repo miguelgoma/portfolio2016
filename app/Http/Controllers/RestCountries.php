@@ -35,6 +35,12 @@ class RestCountries extends Controller
         #exit;
         return $cleanjson;
 
-	}      
+	}
+
+	public function searchcountry()
+	{
+		
+	}
+
 
 }

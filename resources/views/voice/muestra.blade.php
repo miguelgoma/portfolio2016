@@ -56,7 +56,6 @@
     </div>
 @stop
 
-
 @section('includejs')
 <script language="javascript" type="text/javascript">
   $.getJSON( "https://doberman.herokuapp.com/languages",function( data ) {

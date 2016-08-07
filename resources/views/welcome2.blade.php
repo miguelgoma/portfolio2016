@@ -212,7 +212,8 @@
                         <a href="exampleajax"><img class="img-responsive" src="{{ asset('/img/two_screenshot-fashion.png')}}" alt=""></a>
                             <h3>AJAX APLICATION</h3>
                             <p class="text-muted">
-                                <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
+                                <em>REST Countries.</em>
+                                <em>Get information about countries via a RESTful API</em>
                             </p>
                                 <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop" aria-hidden="true"></i>                                
                     </div>
