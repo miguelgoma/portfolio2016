@@ -4,7 +4,7 @@
     Ajax example
 @stop
 
-@section('titledemo')
+@section('htmlheader_title')
     Ajax example
 @stop
 
@@ -83,7 +83,6 @@
   });
 
   $('#register').on('click', function(e) { 
-
   	var selectedCountry = $('#selectCountries :selected').val();
   	//alert(selectedCountry);
 	e.preventDefault();
@@ -95,14 +94,12 @@
     .done(function(response) {
       	//console.log(response);
       	var countryData = response[0];
-				tablefill='<table class="table table-striped"><tbody><tr>';
-                  tablefill+='<td>' + countryData.capital + '</td>';
-                  tablefill+='<td>' + countryData.region + '</td>';
-                  tablefill+='<td><span class="badge bg-green">'+ countryData.population +'</span></td> ';
-                  tablefill+='<td><span class="badge bg-yellow">'+ countryData.area +'</span></td> ';
-                  tablefill+='<td>' + countryData.nativeName + '</td></tr></tbody></table>';
-
-
+		tablefill='<table class="table table-striped"><tbody><tr>';
+        tablefill+='<td>' + countryData.capital + '</td>';
+        tablefill+='<td>' + countryData.region + '</td>';
+        tablefill+='<td><span class="badge bg-green">'+ countryData.population +'</span></td> ';
+        tablefill+='<td><span class="badge bg-yellow">'+ countryData.area +'</span></td> ';
+        tablefill+='<td>' + countryData.nativeName + '</td></tr></tbody></table>';
       	$('#broad').hide().append(tablefill).show();
     })
 

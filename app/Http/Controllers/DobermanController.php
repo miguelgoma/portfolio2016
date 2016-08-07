@@ -56,7 +56,7 @@ class DobermanController extends Controller
         $crawler->filter('div .pagination > ul > li > a')->each(function ($node) {
             $this->var+=1;
             if ($this->var==1) {
-                for ($i=0; $i < 3; $i++) { 
+                for ($i=0; $i < 1; $i++) { 
                     $nd = $node->text();
                     $nd -= $i;
                     $uri = 'http://ebookee.org/tutorial-page'.$nd.'.html';
@@ -64,12 +64,16 @@ class DobermanController extends Controller
                     $cw = $client->request('GET', $uri);
                     $cw->filter('ol > li > a')->each(function ($node) {
                         if ( preg_match('/PHP|Laravel|Ruby|RUBY|Lynda|Infiniteskills|Code|TutsPlus|English|Commerce|School|Learn|Apache|Cordova|SVN|Git|WordPress|Commerce|Linux|SecureNinja|Facebook|MySQL|CodeSchool|Reilly|SkillShare|Modern|Coursera|Deploying|Services|Marketing|Android|JavaScript|Laracasts|Angular|NodeJS|SQL|YouTube|PostgreSQL|Rails|Testing|CSS3|Google|Business|Course|Html/',$node->text()) ) {
-                            print $node->text()."<br/>";
+                            #print $node->text()."<br/>";
+                            $this->titles[] = array('title'=>$node->text());
                         }
                     });
                 }
             }
+                        
         });
+        $response = json_encode( $this->titles );
+        return view('scraping', ['response' => $response]);
     }
 
 }

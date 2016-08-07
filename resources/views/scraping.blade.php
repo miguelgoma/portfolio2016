@@ -1,15 +1,13 @@
-@extends('layouts.landing')
+@extends('layouts.boxed_purple')
 
 @section('title')
-    e-commerce
+    Web scraping
 @stop
 
 @section('titledemo')
-    e-commerce with stripe
+    Web scraping with Laravel
 @stop
 
-@section('descrdemo')
-@stop
-
-@section('content')
+@section('main')
+{{$response}}
 @stop
