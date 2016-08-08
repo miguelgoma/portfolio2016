@@ -213,51 +213,17 @@
                             <h3>AJAX APLICATION</h3>
                             <p class="text-muted">
                                 <em>REST Countries.</em>
-                                <em>Get information about countries via a RESTful API</em>
+                                <em>Get information about countries via a RESTful API.</em>
                             </p>
-                                <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop" aria-hidden="true"></i>                                
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="preview-pane">
-                        <a href="scraping"><img class="img-responsive" src="{{ asset('/img/two_screenshot-legal.png')}}" alt=""></a>
-                            <h3>Web scraping</h3>
-                            <p class="text-muted">
-                                <em>An example of scraping web in the sites http://ebookee.org/</em>
-                            </p>
-                            <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop" aria-hidden="true"></i>                        
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="preview-pane">
-                        <a href="stripe"><img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
-                            <h3>ECOMMERCE WITH STRIPE</h3>
-                            <p class="text-muted">
-                                <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
-                            </p>
-                            <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop" aria-hidden="true"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="row content-row wow fadeIn">
-            <div class="col-md-4">
                     <div class="preview-pane">
                         <a href="twitter"><img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
                             <h3>API Twitter</h3>
                         <p class="text-muted">
-                                <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
+                                <em>Shows trends of 3 countries and the timeline 3 celebrities in México.</em>
                             </p>
-                                <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="preview-pane">
-                        <a href="voice"><img class="img-responsive" src="{{ asset('/img/two_screenshot-creative.png')}}" alt=""></a>
-                            <h3>VOICE BUNNY</h3>
-                        <p class="text-muted">
-                                <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
-                            </p>
-                                <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop fa-2" aria-hidden="true"></i>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -265,20 +231,56 @@
                         <a href="maps"><img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
                             <h3>GOOGLE MAPS</h3>
                         <p class="text-muted">
-                                <em>An example of the agency theme with a video background for the header. A video background can be applied to any other theme!</em>
+                                <em>Innovative maps and locations!</em>
                             </p>
-                                <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="row content-row wow fadeIn">            
+                <div class="col-md-4">
+                    <div class="preview-pane">
+                        <a href="scraping"><img class="img-responsive" src="{{ asset('/img/two_screenshot-legal.png')}}" alt=""></a>
+                            <h3>Web scraping</h3>
+                            <p class="text-muted">
+                                <em>An example of scraping web.</em>
+                            </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="preview-pane">
+                        <a href="voice"><img class="img-responsive" src="{{ asset('/img/two_screenshot-creative.png')}}" alt=""></a>
+                            <h3>VOICE BUNNY</h3>
+                        <p class="text-muted">
+                                <em>Professional voice actors.</em>
+                            </p>
+                                <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop fa-2" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="preview-pane">
+                        <a href="stripe"><img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
+                            <h3>ECOMMERCE WITH STRIPE</h3>
+                            <p class="text-muted">
+                                <em>Comming soon.</em>
+                            </p>
                     </div>
                 </div>
             </div>
 
-            <div class="row content-row wow fadeIn">
+            <div class="row content-row wow fadeIn">            
+                <div class="col-md-3">
+                    <div class="preview-pane">
+                        <a href="data">
+                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
+                        <h3>CHARTS | GOOGLE</h3>
+                        <p class="text-muted"><em>Display live data on your site.</em></p>
+                    </div>
+                </div>
                 <div class="col-md-3">
                     <div class="preview-pane">
                         <a href="agency"><img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
                         <h3>Animations </h3>
-                        <p class="text-muted"><em>An example of the agency theme with a video background for the header.</em></p>
-                        <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop" aria-hidden="true"></i>
+                        <p class="text-muted"><em>Cooming soon.</em></p>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -286,8 +288,7 @@
                         <a href="newsletters">
                         <img class="img-responsive" src="{{ asset('/img/two_screenshot-creative.png')}}" alt=""></a>
                         <h3>NEWSLETTERS</h3>
-                        <p class="text-muted"><em>An example of the agency theme with a video background for the header.</em></p>
-                        <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop" aria-hidden="true"></i>
+                        <p class="text-muted"><em>Cooming soon.</em></p>
                     </div>
                 </div>
                 <div class="col-md-3">
@@ -295,17 +296,7 @@
                         <a href="quote">
                         <img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
                         <h3>Cotizador de autos</h3>
-                        <p class="text-muted"><em>An example of the agency theme with a video background for the header.</em></p>
-                        <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="preview-pane">
-                        <a href="data">
-                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
-                        <h3>MANIPULACION DE DATOS</h3>
-                        <p class="text-muted"><em>An example of the agency theme with a video background for the header.</em></p>
-                        <i class="fa fa-info-circle" aria-hidden="true"></i> <> <i class="fa fa-laptop" aria-hidden="true"></i>
+                        <p class="text-muted"><em>Cooming soon.</em></p>
                     </div>
                 </div>
             </div>
