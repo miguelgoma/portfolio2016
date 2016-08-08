@@ -209,7 +209,7 @@
             <div class="row wow fadeIn" >
                 <div class="col-md-4">
                     <div class="preview-pane">
-                        <a href="exampleajax"><img class="img-responsive" src="{{ asset('/img/two_screenshot-fashion.png')}}" alt=""></a>
+                        <a href="exampleajax"><img class="img-responsive" src="{{ asset('/img/ajax.png')}}" alt=""></a>
                             <h3>AJAX APLICATION</h3>
                             <p class="text-muted">
                                 <em>REST Countries.</em>
@@ -219,16 +219,16 @@
                 </div>
                 <div class="col-md-4">
                     <div class="preview-pane">
-                        <a href="twitter"><img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
+                        <a href="twitter"><img class="img-responsive" src="{{ asset('/img/twitter.png')}}" alt=""></a>
                             <h3>API Twitter</h3>
                         <p class="text-muted">
-                                <em>Shows trends of 3 countries and the timeline 3 celebrities in México.</em>
+                                <em>Shows trends of 3 countries and the timeline of 3 celebrities in México.</em>
                             </p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="preview-pane">
-                        <a href="maps"><img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
+                        <a href="maps"><img class="img-responsive" src="{{ asset('/img/maps_miami.png')}}" alt=""></a>
                             <h3>GOOGLE MAPS</h3>
                         <p class="text-muted">
                                 <em>Innovative maps and locations!</em>
@@ -239,7 +239,7 @@
             <div class="row content-row wow fadeIn">            
                 <div class="col-md-4">
                     <div class="preview-pane">
-                        <a href="scraping"><img class="img-responsive" src="{{ asset('/img/two_screenshot-legal.png')}}" alt=""></a>
+                        <a href="scraping"><img class="img-responsive" src="{{ asset('/img/scrap.png')}}" alt=""></a>
                             <h3>Web scraping</h3>
                             <p class="text-muted">
                                 <em>An example of scraping web.</em>
@@ -248,7 +248,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="preview-pane">
-                        <a href="voice"><img class="img-responsive" src="{{ asset('/img/two_screenshot-creative.png')}}" alt=""></a>
+                        <a href="voice"><img class="img-responsive" src="{{ asset('/img/voice.png')}}" alt=""></a>
                             <h3>VOICE BUNNY</h3>
                         <p class="text-muted">
                                 <em>Professional voice actors.</em>
@@ -271,7 +271,7 @@
                 <div class="col-md-3">
                     <div class="preview-pane">
                         <a href="data">
-                        <img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
+                        <img class="img-responsive" src="{{ asset('/img/graph.png')}}" alt=""></a>
                         <h3>CHARTS | GOOGLE</h3>
                         <p class="text-muted"><em>Display live data on your site.</em></p>
                     </div>
