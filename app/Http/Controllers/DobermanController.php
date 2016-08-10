@@ -55,16 +55,16 @@ class DobermanController extends Controller
         $this->var = 0;
         $crawler->filter('div .pagination > ul > li > a')->each(function ($node) {
             $this->var+=1;
+            $this->cntr=1;
             if ($this->var==1) {
-                for ($i=0; $i < 1; $i++) { 
-                    $nd = $node->text();
+                $nd = $node->text();
+                for ($i=0; $i < 3; $i++) { 
                     $nd--;
                     $uri = 'http://ebookee.org/tutorial-page'.$nd.'.html';
                     $client = new Client();
                     $cw = $client->request('GET', $uri);
-                    $this->cntr=1;
                     $cw->filter('ol > li > a')->each(function ($node) {
-                        if ( preg_match('/PHP|Laravel|Ruby|RUBY|Lynda|Infiniteskills|Code|TutsPlus|English|Commerce|School|Learn|Apache|Cordova|SVN|Git|WordPress|Commerce|Linux|SecureNinja|Facebook|MySQL|CodeSchool|Reilly|SkillShare|Modern|Coursera|Deploying|Services|Marketing|Android|JavaScript|Laracasts|Angular|NodeJS|SQL|YouTube|PostgreSQL|Rails|Testing|CSS3|Google|Business|Course|Html/',$node->text()) ) {
+                        if ( preg_match('/PHP|Laravel|Ruby|RUBY|Lynda|Infiniteskills|Code|TutsPlus|English|Commerce|School|Learn|Apache|Cordova|SVN|Git|WordPress|Commerce|Linux|SecureNinja|Facebook|MySQL|CodeSchool|Reilly|SkillShare|Modern|Coursera|Deploying|Services|Marketing|Android|JavaScript|Laracasts|Angular|NodeJS|SQL|YouTube|PostgreSQL|Rails|Testing|CSS3|Google|Business|Course|Html|Bootstrap|Net|Json|Design|Android|ASP/',$node->text()) ) {
                             #print $node->text()."<br/>";
                             $this->titles[] = array('number'=>$this->cntr,'title'=>$node->text());
                             $this->cntr++;
