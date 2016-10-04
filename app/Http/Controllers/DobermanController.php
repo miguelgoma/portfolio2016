@@ -58,7 +58,7 @@ class DobermanController extends Controller
             $this->cntr=1;
             if ($this->var==1) {
                 $nd = $node->text();
-                for ($i=0; $i < 2; $i++) { 
+                for ($i=0; $i < 5; $i++) { 
                     $nd--;
                     $uri = 'http://ebookee.org/tutorial-page'.$nd.'.html';
                     $client = new Client();
