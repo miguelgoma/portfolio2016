@@ -77,4 +77,44 @@ class DobermanController extends Controller
         return view('scraping', ['response' => $response]);
     }
 
+    public function indeed()
+    {
+
+        $client = new Client();
+        //$crawler = $client->request('GET', 'http://www.indeed.com/jobs?q=php&l=United+States+fl');
+        $crawler = $client->request('GET', 'http://www.indeed.com/jobs?as_and=php&as_phr=&as_any=&as_not=&as_ttl=&as_cmp=&jt=all&st=&salary=&radius=50&l=United+States+fl&fromage=15&limit=30&sort=&psf=advsrch');
+
+        $crawler->filter('div > span[itemprop="jobLocation"]')->each(function ($node) {
+                //print $node->text()."<br/>";
+                $this->jobLocation[] = $node->text();
+        });
+
+        $crawler->filter('div > span.date')->each(function ($node) {
+                $this->date[] = $node->text();
+        });  
+
+        $crawler->filter('div > span.company')->each(function ($node) {
+                $this->company[] = $node->text();
+        });
+
+        $crawler->filter('a')->each(function ($node) {
+            if ( preg_match('/clk/',$node->attr('href')) ) {
+                $this->titleJob[] = $node->text();
+                //print $node->attr('href')."<br/>";
+                $this->refTitleJob[] = $node->attr('href');
+            }            
+
+        });
+
+        $count = sizeof($this->titleJob);
+        for ($i=0; $i < $count; $i++) { 
+            #echo "Titulo: ".$this->titleJob[$i]."<br/> Compañía: ".$this->company[$i]."<br/> Lugar: ".$this->jobLocation[$i]."<br/> Date: ".$this->date[$i]."<br/> Ref: ".$this->refTitleJob[$i]." "."<br/><br/>";
+            $this->titles[] = array('title' => $this->titleJob[$i], 'company' => $this->company[$i], 'location' => $this->jobLocation[$i], 'fecha' => $this->date[$i], 'ref' => $this->refTitleJob[$i]);
+        }
+        
+        $response = json_encode( $this->titles );
+        return view('jobflorida', ['response' => $response]);
+
+    }
+
 }

@@ -103,6 +103,7 @@ Route::get('/test', function()
 
 Route::get('mail', 'DobermanController@mail');
 Route::get('scraping', 'DobermanController@scrap');
+Route::get('jobflorida', 'DobermanController@indeed');
 
 
 /*
