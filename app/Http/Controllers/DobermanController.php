@@ -82,7 +82,7 @@ class DobermanController extends Controller
 
         $client = new Client();
         //$crawler = $client->request('GET', 'http://www.indeed.com/jobs?q=php&l=United+States+fl');
-        $crawler = $client->request('GET', 'http://www.indeed.com/jobs?as_and=php&as_phr=&as_any=&as_not=&as_ttl=&as_cmp=&jt=all&st=&salary=&radius=50&l=United+States+fl&fromage=15&limit=30&sort=&psf=advsrch');
+        $crawler = $client->request('GET', 'http://www.indeed.com/jobs?as_and=php&as_phr=&as_any=&as_not=&as_ttl=&as_cmp=&jt=all&st=&salary=&radius=50&l=United+States+fl&fromage=15&limit=50&sort=&psf=advsrch');
 
         $crawler->filter('div > span[itemprop="jobLocation"]')->each(function ($node) {
                 //print $node->text()."<br/>";
@@ -115,6 +115,11 @@ class DobermanController extends Controller
         $response = json_encode( $this->titles );
         return view('jobflorida', ['response' => $response]);
 
+    }
+
+    public function animations()
+    {
+        return view('animations');
     }
 
 }

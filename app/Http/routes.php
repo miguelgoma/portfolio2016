@@ -105,6 +105,8 @@ Route::get('mail', 'DobermanController@mail');
 Route::get('scraping', 'DobermanController@scrap');
 Route::get('jobflorida', 'DobermanController@indeed');
 
+Route::get('animations', 'DobermanController@animations');
+
 
 /*
 REST Countries

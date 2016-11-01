@@ -278,7 +278,7 @@
                 </div>
                 <div class="col-md-3">
                     <div class="preview-pane">
-                        <a href="agency"><img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
+                        <a href="animations"><img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
                         <h3>Animations </h3>
                         <p class="text-muted"><em>Cooming soon.</em></p>
                     </div>
@@ -667,14 +667,4 @@
                 }
                 play();
             });
-    </script>
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-85164732-1', 'auto');
-      ga('send', 'pageview');
-
     </script>
