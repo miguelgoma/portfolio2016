@@ -280,7 +280,7 @@
                     <div class="preview-pane">
                         <a href="animations"><img class="img-responsive" src="{{ asset('/img/two_screenshot-agency.png')}}" alt=""></a>
                         <h3>Animations </h3>
-                        <p class="text-muted"><em>Cooming soon.</em></p>
+                        <p class="text-muted"><em>Go now.</em></p>
                     </div>
                 </div>
                 <div class="col-md-3">
