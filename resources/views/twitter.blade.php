@@ -54,7 +54,7 @@ Twitter API
 <div class="col-md-4">
 <div class="box">
   <div class="box-header">
-    <h3 class="box-title">Barackobama</h3>
+    <h3 class="box-title">Donald Trump</h3>
   </div>
   <div class="box-body no-padding">
     <table class="table table-striped">
@@ -108,6 +108,75 @@ Twitter API
           <th>Date</th>
         </tr>
         @foreach (json_decode($VILLALVAZO13) as $v)
+          <tr>
+              <th><?PHP echo Twitter::linkify($v->text)?></th>
+              <th>{{ date("Y-m-d h:i:sa",strtotime($v->created_at)) }}</th>
+          </tr>
+          @endforeach
+      </tbody></table>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+<div class="col-md-4">
+<div class="box">
+  <div class="box-header">
+    <h3 class="box-title">Excelsior</h3>
+  </div>
+  <div class="box-body no-padding">
+    <table class="table table-striped">
+      <tbody><tr>
+        <th>Tweet</th>
+        <th>Date</th>
+      </tr>
+      @foreach (json_decode($Excelsior) as $r)
+      <tr>
+        <th><?PHP echo Twitter::linkify($r->text)?></th>
+        <th>{{ date("Y-m-d h:i:sa",strtotime($r->created_at)) }}</th>
+      </tr>
+      @endforeach
+    </tbody></table>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+<div class="box">
+    <div class="box-header">
+      <h3 class="box-title">Foro_TV</h3>
+    </div>
+    <div class="box-body no-padding">
+      <table class="table table-striped">
+        <tbody><tr>
+          <th>Tweet</th>
+          <th>Date</th>
+        </tr>
+      @foreach (json_decode($Foro_TV) as $m)
+      <tr>
+        <th><?PHP echo Twitter::linkify($m->text)?></th>
+        <th>{{ date("Y-m-d h:i:sa",strtotime($m->created_at)) }}</th>
+      </tr>
+      @endforeach
+    </tbody></table>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4">
+  <div class="box">
+    <div class="box-header">
+      <h3 class="box-title">AztecaNoticias</h3>
+    </div>
+    <div class="box-body no-padding">
+      <table class="table table-striped">
+        <tbody>
+        <tr>
+          <th>Tweet</th>
+          <th>Date</th>
+        </tr>
+        @foreach (json_decode($AztecaNoticias) as $v)
           <tr>
               <th><?PHP echo Twitter::linkify($v->text)?></th>
               <th>{{ date("Y-m-d h:i:sa",strtotime($v->created_at)) }}</th>

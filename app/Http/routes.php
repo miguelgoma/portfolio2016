@@ -33,9 +33,12 @@ Route::get('/twitter', function () {
    try
     {
         //$response = Twitter::getUserTimeline(['count' => 20, 'format' => 'array']);
-        $barackobama = Twitter::getUserTimeline(['screen_name' => 'barackobama', 'count' => 15, 'format' => 'json']);
-        $El_Universal_Mx = Twitter::getUserTimeline(['screen_name' => 'El_Universal_Mx', 'count' => 15, 'format' => 'json']);
-        $VILLALVAZO13 = Twitter::getUserTimeline(['screen_name' => 'VILLALVAZO13', 'count' => 15, 'format' => 'json']);
+        $barackobama = Twitter::getUserTimeline(['screen_name' => 'realdonaldtrump', 'count' => 20, 'format' => 'json']);
+        $El_Universal_Mx = Twitter::getUserTimeline(['screen_name' => 'El_Universal_Mx', 'count' => 20, 'format' => 'json']);
+        $VILLALVAZO13 = Twitter::getUserTimeline(['screen_name' => 'VILLALVAZO13', 'count' => 20, 'format' => 'json']);
+        $Excelsior = Twitter::getUserTimeline(['screen_name' => 'Excelsior', 'count' => 20, 'format' => 'json']);
+        $Foro_TV = Twitter::getUserTimeline(['screen_name' => 'Foro_TV', 'count' => 20, 'format' => 'json']);
+        $AztecaNoticias = Twitter::getUserTimeline(['screen_name' => 'AztecaNoticias ', 'count' => 20, 'format' => 'json']);
         $trend = Twitter::getTrendsPlace(['id' => '116545']);
         $trend = json_encode($trend);
         $miamitrend = Twitter::getTrendsPlace(['id' => '23424977']);
@@ -48,7 +51,7 @@ Route::get('/twitter', function () {
         dd(Twitter::logs());
     }
 
-    return view('twitter', ['barackobama' => $barackobama,'VILLALVAZO13' => $VILLALVAZO13,'El_Universal_Mx' => $El_Universal_Mx,'trend' => $trend, 'miamitrend' => $miamitrend, 'barcelonaTrend' => $barcelonaTrend]);
+    return view('twitter', ['barackobama' => $barackobama,'VILLALVAZO13' => $VILLALVAZO13,'El_Universal_Mx' => $El_Universal_Mx,'AztecaNoticias' => $AztecaNoticias,'Excelsior' => $Excelsior,'Foro_TV' => $Foro_TV,'trend' => $trend, 'miamitrend' => $miamitrend, 'barcelonaTrend' => $barcelonaTrend]);
 });
 
 
